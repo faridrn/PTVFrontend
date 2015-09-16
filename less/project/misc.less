@@ -1,1 +1,16 @@
-body {  }
+a {
+    transition: 0.2s all;
+    &:hover, &:visited, &:active, &:focus, &:link { text-decoration: none; outline: 0 none; }
+}
+.menu {
+    list-style: none; padding: 0;
+    li {
+	&.haschild {
+	    position: relative;
+	}
+	a {
+	    color: #fff;
+	    &:hover { text-decoration: none; color: @gray-lighter; }
+	}
+    }
+}
