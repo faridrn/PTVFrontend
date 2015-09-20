@@ -1,0 +1,320 @@
+{
+  "name": "icon",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "e4540eb0bba3938a58fdfb35a483323d",
+      "css": "sports",
+      "code": 59427,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M812.5 187.5V62.5H187.5V187.5H0V312.5C0 416.1 83.9 500 187.5 500 207.1 500 226 497 243.8 491.4 288.9 555.9 357.6 602.5 437.5 618.7V812.5H375C306 812.5 250 868.5 250 937.5H750C750 868.5 694 812.5 625 812.5H562.5V618.7C642.4 602.5 711.1 555.9 756.2 491.4 774 497 792.9 500 812.5 500 916.1 500 1000 416.1 1000 312.5V187.5H812.5ZM187.5 425.8C125 425.8 74.2 375 74.2 312.5V250H187.5V312.5C187.5 351.7 194.8 389.3 208 423.9 201.3 425.1 194.5 425.8 187.5 425.8ZM925.8 312.5C925.8 375 875 425.8 812.5 425.8 805.5 425.8 798.7 425.1 792 423.9 805.2 389.3 812.5 351.7 812.5 312.5V250H925.8V312.5Z",
+        "width": 1000
+      },
+      "search": [
+        "trophy"
+      ]
+    },
+    {
+      "uid": "d2c951c340ec04f1a26b68eb50b4b5e4",
+      "css": "health",
+      "code": 59428,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 916.7C0 962.7 37.3 1000 83.3 1000H916.7C962.7 1000 1000 962.7 1000 916.7L1000 291.7C1000 245.6 962.7 208.3 916.7 208.3H750V83.3C750 37.3 712.7 0 666.7 0H333.3C287.3 0 250 37.3 250 83.3V208.3H83.3C37.3 208.3 0 245.6 0 291.7V916.7ZM645.8 208.3H354.2V150C354.2 124.6 374.6 104.2 400 104.2H600C625.4 104.2 645.8 124.6 645.8 150V208.3ZM295.8 500H395.8V400C395.8 374.6 416.3 354.2 441.7 354.2H558.3C583.8 354.2 604.2 374.6 604.2 400L604.2 500H704.2C729.6 500 750 520.4 750 545.8V662.5C750 687.9 729.6 708.3 704.2 708.3H604.2V808.3C604.2 833.8 583.8 854.2 558.3 854.2H441.7C416.3 854.2 395.8 833.8 395.8 808.3L395.8 708.3H295.8C270.4 708.3 250 687.9 250 662.5V545.8C250 520.4 270.4 500 295.8 500Z",
+        "width": 1000
+      },
+      "search": [
+        "medicine"
+      ]
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail",
+      "code": 59435,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "31972e4e9d080eaa796290349ae6c1fd",
+      "css": "society",
+      "code": 59433,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dc3f1d5b1d006f7f7b3b6295eccab9da",
+      "css": "camera",
+      "code": 59434,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "eye",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7fd683b2c518ceb9e5fa6757f2276faa",
+      "css": "eye-off",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7034e4d22866af82bef811f52fb1ba46",
+      "css": "code",
+      "code": 59436,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "72b1277834cba5b7944b0a6cac7ddb0d",
+      "css": "rss",
+      "code": 59424,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59426,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
+      "css": "play",
+      "code": 59411,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "cb36cbe4e2dac9545e32c3d80a7c6e03",
+      "css": "military",
+      "code": 59429,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dd6c6b221a1088ff8a9b9cd32d0b3dd5",
+      "css": "check",
+      "code": 59423,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b8d0c7d76e87b94882329a88e8e43d3d",
+      "css": "gplus",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 59440,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9121e3eb89863f67c8bda378eea01a93",
+      "css": "reddit",
+      "code": 59438,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a9862b9d5197886c1ad693ecd7120b31",
+      "css": "youtube",
+      "code": 59439,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube-play",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b08cfe8039de2ce815686aced2caef06",
+      "css": "download",
+      "code": 59420,
+      "src": "entypo"
+    },
+    {
+      "uid": "44199a54057e6e264fde61a49b034171",
+      "css": "upload",
+      "code": 59421,
+      "src": "entypo"
+    },
+    {
+      "uid": "390d6d13398cbf8c8c3c5493f7d34088",
+      "css": "export",
+      "code": 59419,
+      "src": "entypo"
+    },
+    {
+      "uid": "28f124a10127a47b9d9472699193d75a",
+      "css": "print",
+      "code": 59418,
+      "src": "entypo"
+    },
+    {
+      "uid": "16890362e811b4cb8de36282b071fe30",
+      "css": "comment",
+      "code": 59417,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c0b53280f82068f6bab4e2200025d9f",
+      "css": "chat",
+      "code": 59416,
+      "src": "entypo"
+    },
+    {
+      "uid": "289b5f92f23acf1059c93fbf401c1ad5",
+      "css": "down-open-big",
+      "code": 59408,
+      "src": "entypo"
+    },
+    {
+      "uid": "884cfc3e6e2d456dd2a2ca0dbb9e6337",
+      "css": "left-open-big",
+      "code": 59406,
+      "src": "entypo"
+    },
+    {
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "right-open-big",
+      "code": 59405,
+      "src": "entypo"
+    },
+    {
+      "uid": "0805cca616b3c12714f35af4d0912c10",
+      "css": "up-open-big",
+      "code": 59407,
+      "src": "entypo"
+    },
+    {
+      "uid": "84a7262985600b683bbab0da9298776d",
+      "css": "sci-tech",
+      "code": 59432,
+      "src": "entypo"
+    },
+    {
+      "uid": "b7a336095aa4535c3689cb557edf23db",
+      "css": "monitor",
+      "code": 59414,
+      "src": "entypo"
+    },
+    {
+      "uid": "689febe699d74bc8862965555503e445",
+      "css": "pinterest",
+      "code": 59412,
+      "src": "entypo"
+    },
+    {
+      "uid": "58b78b6ca784d5c3db5beefcd9e18061",
+      "css": "left-small",
+      "code": 59437,
+      "src": "typicons"
+    },
+    {
+      "uid": "877a233d7fdca8a1d82615b96ed0d7a2",
+      "css": "right-small",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "vsvgkgr7wqknxe7rsjrusvvs43yekcyr",
+      "css": "videocam",
+      "code": 59422,
+      "src": "modernpics"
+    },
+    {
+      "uid": "w42gjpwdzqeszptpy1xqp8r77o6gcasj",
+      "css": "facebook",
+      "code": 59410,
+      "src": "modernpics"
+    },
+    {
+      "uid": "uor1aru5x0tewrwsl36amx6hogjv61cs",
+      "css": "twitter",
+      "code": 59393,
+      "src": "modernpics"
+    },
+    {
+      "uid": "18be7ed7a4baf5713f2de51bf83b12f2",
+      "css": "newspaper",
+      "code": 59425,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "c896fd4e287aebcf79803e0ece001ec1",
+      "css": "gplus-1",
+      "code": 59392,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "2b39f74a074e338a67270567e95142cb",
+      "css": "travel",
+      "code": 59430,
+      "src": "maki"
+    },
+    {
+      "uid": "5f89d009e91c94c7c9be2f8711d7a2eb",
+      "css": "arts",
+      "code": 59431,
+      "src": "maki"
+    },
+    {
+      "uid": "5287c0dd80c29636f3d45b8b52cd3021",
+      "css": "podcast",
+      "code": 59415,
+      "src": "zocial"
+    },
+    {
+      "uid": "dad4e7f8dc2e57c92cffc0231202d9a0",
+      "css": "instagram",
+      "code": 59413,
+      "src": "brandico"
+    },
+    {
+      "uid": "31accb20e8819b200c297df608e68830",
+      "css": "video",
+      "code": 59401,
+      "src": "elusive"
+    },
+    {
+      "uid": "529244b2b39e0c5a145506ce02271068",
+      "css": "video-circled",
+      "code": 59400,
+      "src": "elusive"
+    },
+    {
+      "uid": "b59b3b618699b467541f631edd5a02ed",
+      "css": "volume",
+      "code": 59397,
+      "src": "elusive"
+    },
+    {
+      "uid": "d5fabfa46384953ae055fceacb2229a7",
+      "css": "arrows-cw",
+      "code": 59409,
+      "src": "elusive"
+    },
+    {
+      "uid": "fc006ff27e50163bdec3a7588226171b",
+      "css": "play-circled",
+      "code": 59403,
+      "src": "elusive"
+    },
+    {
+      "uid": "7acc2dfe18c6f4548626696fab27ba8a",
+      "css": "play-circled2",
+      "code": 59402,
+      "src": "elusive"
+    },
+    {
+      "uid": "221947bea81f49a11b863c686a7bd235",
+      "css": "search",
+      "code": 59396,
+      "src": "websymbols"
+    }
+  ]
+}
