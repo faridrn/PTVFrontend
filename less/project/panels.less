@@ -6,4 +6,34 @@
     }
     .panel-footer {
     }
+    
+    &.list {
+	.panel-body {
+	    ul {
+		list-style: none; padding: 0;
+		li {
+		    border-top: 1px solid @gray-lighter;
+		}
+	    }
+	}
+    }
+    &.items {
+	.panel-body {
+	    ul {
+		list-style: none; padding: 0; margin: -(@grid-gutter-width / 2);
+		li { padding: (@grid-gutter-width / 2); float: left; }
+	    }
+	}
+	&.first-featured {
+	    .panel-body ul li:first-child { width: 100%; }
+	}
+	&.last-featured {
+	    .panel-body ul li:last-child { width: 100%; }
+	}
+    }
+    &.top-news {
+	ul {
+	    li { width: 25%; }
+	}
+    }
 }
