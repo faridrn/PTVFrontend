@@ -1,7 +1,17 @@
 html, body { font-family: 'Roboto', Arial, sans-serif; }
 a {
-    transition: 0.2s all;
-    &:hover, &:visited, &:active, &:focus, &:link { text-decoration: none; outline: 0 none; }
+    transition: 0.2s all; color: @text-color;
+    &:hover, &:visited, &:active, &:focus, &:link { text-decoration: none; outline: 0 none; color: #000; }
+}
+.wrapper {
+    &._black { background: @black; color: #fff; }
+    &._gray { background: @gray-darker; color: #fff; }
+    &._black, &._gray {
+	a {
+	    color: @gray-lighter;
+	    &:hover, &:visited, &:active, &:focus, &:link { color: #fff; }
+	}
+    }
 }
 .menu {
     list-style: none; padding: 0;
