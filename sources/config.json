@@ -83,6 +83,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "f27bba41a700af51a4dd23cf4edea61d",
+      "css": "headphones",
+      "code": 59441,
+      "src": "fontawesome"
+    },
+    {
       "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
       "css": "play",
       "code": 59411,
@@ -309,6 +315,12 @@
       "css": "play-circled2",
       "code": 59402,
       "src": "elusive"
+    },
+    {
+      "uid": "43e4647c57186b5e06874621b5e665be",
+      "css": "calendar-1",
+      "code": 59442,
+      "src": "linecons"
     },
     {
       "uid": "221947bea81f49a11b863c686a7bd235",
