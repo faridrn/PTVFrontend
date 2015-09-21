@@ -42,11 +42,14 @@
 	}
     }
     &.items {
+	.panel-title {
+	    h2 { margin: ((@grid-gutter-width / 2) * 3) 0 (@grid-gutter-width * 2); }
+	}
 	.panel-body {
 	    ul {
 		list-style: none; padding: 0; margin: 0 -(@grid-gutter-width / 2);
 		li {
-		    padding: 0 (@grid-gutter-width / 2); float: left; width: 25%; position: relative; margin-bottom: @grid-gutter-width;
+		    padding: 0 (@grid-gutter-width / 2); float: left; width: 25%; position: relative; margin-bottom: @grid-gutter-width; min-height: 230px;
 		    .img {
 			a {
 			    display: block; position: relative;
@@ -56,7 +59,10 @@
 		    }
 		    .dsc {
 			h3, p { margin: 0; }
-			h3 { font-size: 16px; line-height: 1.3; padding-top: (@grid-gutter-width / 2); }
+			h3 {
+			    font-size: 20px; font-weight: 500; line-height: 1.3; padding-top: (@grid-gutter-width / 2);
+			    a { padding-bottom: 6px; }
+			}
 			a { display: block; }
 		    }
 		    &:hover {
@@ -79,7 +85,7 @@
 	&.items-horizontal {
 	    .panel-body {
 		ul li {
-		    width: 25%; margin-bottom: 0;
+		    width: 25%; margin-bottom: 0; min-height: 0;
 		    .img {
 			width: 50%; float: left;
 			a {
@@ -88,6 +94,10 @@
 		    }
 		    .dsc {
 			width: 50%; margin-left: 50%;
+			h3 {
+			    font-size: 18px; padding-top: 0;
+			    a { padding: 0; }
+			}
 		    }
 		}
 	    }
@@ -97,8 +107,11 @@
 	.panel-body {
 	    ul {
 		li {
+		    min-height: 0;
 		    .img {  }
-		    .dsc {  }
+		    .dsc { 
+			h3 { font-size: 18px; }
+		    }
 		    &:first-child {
 			.dsc {
 			    position: absolute; bottom: 0; color: #fff; margin-right: (@grid-gutter-width / 2); background: tomato;
@@ -133,15 +146,23 @@
     &.tiles {
 	.panel-body ul li { width: 33.33333%; }
 	&.tiles-big .panel-body ul li { width: 50%; }
+	&.has-summary {
+	    .panel-body ul li { min-height: 320px; }
+	}
     }
     &.social {
 	ul {
 	    list-style: none; padding: 0; font-size: 0;
 	    li {
 		display: inline-block;
-		& ~ li { margin-left: 6px; }
+		& ~ li { margin-left: 8px; }
 		a {
-		    display: block; font-size: 18px; border: 1px solid @black; border-radius: 100%; width: 32px; height: 32px; line-height: 32px; text-align: center;
+		    display: block; font-size: 20px; border: 1px solid @black; border-radius: 100%; width: 36px; height: 36px; line-height: 36px; text-align: center;
+ 		}
+		&:hover {
+		    a {
+			color: @blue; border-color: @blue;
+		    }
 		}
 	    }
 	}
