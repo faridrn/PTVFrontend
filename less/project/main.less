@@ -1,7 +1,9 @@
 .wrapper {
     &._black { background: @black; color: #fff; }
+    &._graylighter { background: @gray-lighter; }
+    &._graylight { background: @gray-light; }
     &._gray { background: @gray-darker; color: #fff; }
-    &._darkgray { background: @black; color: #fff; }
+    &._navy { background: @navy; color: #fff; }
 }
 #main {
     .wrapper {
@@ -9,5 +11,6 @@
     }
 }
 #header-items {
-    padding: (@grid-gutter-width) 0; background: @gray-lighter;
+    padding: (@grid-gutter-width) 0;
+    /*background: @gray-lighter;*/
 }
