@@ -1,2 +1,32 @@
-#footer { border-top: 60px solid @black; }
+#footer {
+    border-top: @grid-gutter-width solid @black;
+    .logo-container { position: relative; height: 45px; }
+}
+#sitemap {
+    padding: (@grid-gutter-width * 3) 0 (@grid-gutter-width);
+    & > * { min-height: 220px; }
+}
 #copyright { line-height: 45px; color: @gray-lighter; font-weight: 300; }
+
+.footer-menu {
+    .menu-title {
+	margin-top: 0; font-size: 20px;
+	a {
+	    display: block;
+	    &:hover { color: @blue-light; }
+	}
+    }
+    ol {
+	list-style: none; margin-bottom: 0; padding-left: 0;
+	li {
+	    line-height: 24px;
+	    a {
+		display: block; font-size: 13px; color: @gray-light !important;
+		&:hover { color: @blue !important; }
+	    }
+	}
+    }
+}
+.footer-logo {
+    display: block; position: absolute; width: 140px; height: 170px; background: url('../img/logo_transparent.png') no-repeat right bottom transparent; bottom: 0; text-indent: 999px; overflow: hidden;
+}
