@@ -26,15 +26,44 @@
 	    }
 	}
 	&.top-news {
-	    .panel-body ul li { min-height: 160px; }
+	    .panel-body ul li {
+		min-height: 160px;
+		.dsc {
+		    height: auto;
+		    h3, p { max-height: none; }
+		}
+	    }
 	}
     }
 }
 // SM
 @media (max-width: @screen-sm-max) { 
-    
+    .panel {
+	&.social {
+	    ul {
+		text-align: center;
+		li {
+		    & ~ li { margin-left: 8px; }
+		}
+	    }
+	}
+	&.items {
+	    &.items-horizontal .panel-body ul li {
+		.dsc {
+		    height: 48px;
+		    h3 { font-size: 12px; }
+		}
+	    }
+	    &.has-summary .panel-body ul li {
+		min-height: 320px;
+	    }
+	    &.first-featured .panel-body {
+		ul li { min-height: 180px; }
+	    }
+	}
+    }
 }				     
 // XS
 @media (max-width: @screen-xs-max) {
-    
+
 }
