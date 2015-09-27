@@ -15,6 +15,24 @@
 	    a {
 		&:hover { color: @blue; }
 	    }
+	    &.search {
+		min-width: 26px; min-height: 26px;
+		& > a { position: absolute; top: 0px; right: 0; }
+		.child {
+		    height: auto; min-height: 32px; width: 0; display: none;
+		    .search-form {
+			margin-right: 30px; width: 220px; position: relative;
+ 			input { height: 30px; border-radius: 0; background: @gray-dark; color: @gray-lighter; border-color: @gray; margin-top: -2px; }
+			button { position: absolute; top: 0; right: -32px; width: 32px; height: 30px; border: 0 none; background: rgba(255, 255, 255, 0.1); }
+		    }
+		}
+	    }
+	}
+	&.header-menu {
+	    .haschild {
+/*		position: relative;
+		.child { position: absolute; }*/
+	    }
 	}
     }
 }
