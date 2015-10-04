@@ -13,11 +13,12 @@
             float: left; font-size: 18px; font-weight: 400;
             & ~ li { margin-left: @grid-gutter-width; }
             a {
+                display: block;
                 &:hover { color: @blue; }
             }
             &.search {
                 min-height: 26px; min-width: 32px;
-                & > a { position: absolute; top: 0px; right: 0; }
+                & > a { position: absolute; top: auto; right: 0; }
                 .child {
                     height: auto; min-height: 32px; width: 0; overflow: hidden; height: 40px; margin: -5px; padding: 5px 0;
                     .search-form {
@@ -28,30 +29,40 @@
                 }
             }
         }
-        &.header-menu {
-            .haschild {
-                /*		position: relative;
-                        .child { position: absolute; }*/
-            }
-        }
     }
 }
 #navbar {
     height: 31px;
     .menu {
-        margin-bottom: 0;
+        margin-bottom: 0; margin-left: 100px;
         li {
             font-size: 18px;
+            &.haschild {
+                position: static;
+                & > a {
+                    padding-right: ((@grid-gutter-width * 3) / 2);
+                    &:after { display: block; content: ""; width: 0; height: 0; border-top: 5px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent; position: absolute; right: (@grid-gutter-width / 2); top: 15px; }
+                }
+                &:hover {
+                    .child { display: block; }
+                }
+            }
             a {
-                display: block; line-height: 30px; font-weight: 500; padding: 0 (@grid-gutter-width / 3) * 2;
+                display: block; line-height: 31px; font-weight: 500; padding: 0 ((@grid-gutter-width / 2)); position: relative;
             }
             &:hover {
                 a { background: @blue; }
             }
+            .child {
+                position: absolute; background: @blue; width: 700px; z-index: 190; height: 32px; left: 0; top: 31px; display: none;
+                ul {
+                    margin-left: 0; padding: 0 @grid-gutter-width;
+                }
+            }
         }
     }
     #menu {
-        ul { margin-left: 100px; }
+        ul {  }
     }
     #sidemenu {
         ul { text-align: right; }
