@@ -74,6 +74,19 @@
                     font-size: 0; text-align: center; line-height: 32px; width: 32px; color: @gray-lighter;
                     i { font-size: 18px; }
                 }
+                &.search {
+                    .child {
+                        height: 100%; width: 100%; padding: 0; margin: 0; position: fixed; right: 0; bottom: 0; top: 0; left: 0; background: rgba(0, 0, 0, 0.85); z-index: 900; cursor: pointer; display: none;
+                        &:after { display: block; content: '×'; position: fixed; top: 0; right: 0; width: 48px; height: 48px; background: #000; text-align: center; line-height: 48px; font-size: 32px; color: @gray-light; }
+                        .search-form {
+                            position: fixed; top: 30%; left: 50%; margin-lefT: -110px; margin-top: -14px;
+                            button {
+                                right: 0; background: transparent;
+                                &:before { font-family: 'icon'; content: '\e804'; }
+                            }
+                        }
+                    }
+                }
             }
         }  
     } 
@@ -91,18 +104,14 @@
                         & > .child ul li a { background: @blue-dark; }
                     }
                     & ~ li { border-top: 1px solid @blue-dark; }
-                    a {
-                        font-weight: 400; line-height: 40px;
-                    }
+                    a { font-weight: 400; line-height: 40px; }
                     .child {
                         position: static; height: auto; width: auto; margin-left: @grid-gutter-width;
                         ul {
                             padding: 0; background: @blue-dark;
                             li {
                                 & ~ li { border-top-color: @blue-darker; }
-                                &:hover {
-                                    & > a { background: darken(@blue-darker, 10%); }
-                                }
+                                &:hover > a { background: darken(@blue-darker, 10%); }
                             }
                         }
                     }
