@@ -10,14 +10,37 @@ $(function () {
                 $search.animate({width: 0, padding: '5px 0'});
             });
         } else {
-            $search.fadeIn(500, function() {
+            $search.fadeIn(500, function () {
                 $search.find("input").focus();
-                $search.on('click', function(e){
+                $search.on('click', function (e) {
                     if (e.target !== this)
                         return;
                     $search.fadeOut(500);
                 });
             });
+        }
+        e.preventDefault();
+    });
+    
+    $(document).on('click', "[data-toggle]", function(e) {
+        var $this = $(this);
+        var $target = $($this.attr('data-target'));
+        switch ($this.attr('data-toggle')) {
+            case 'slide':
+                if ($target.is(':visible'))
+                    $target.slideUp();
+                else
+                    $target.slideDown();
+                break;
+            case 'toggle':
+                $target.toggle();
+                break;
+            case 'fade':
+                if ($target.is(':visible'))
+                    $target.fadeOut();
+                else
+                    $target.FadeIn();
+                break;
         }
         e.preventDefault();
     });
