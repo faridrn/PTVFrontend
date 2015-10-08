@@ -21,8 +21,20 @@ $(function () {
         }
         e.preventDefault();
     });
-    
-    $(document).on('click', "[data-toggle]", function(e) {
+
+    $(".menu li.haschild").hover(function (e) {
+        var $li = $(this);
+        $li.find(".child").fadeIn(200, function () {
+            $li.addClass("active");
+        });
+    }, function () {
+        var $li = $(this);
+        $li.find(".child").delay(200).fadeOut(200, function () {
+            $li.removeClass("active");
+        });
+    });
+
+    $(document).on('click', "[data-toggle]", function (e) {
         var $this = $(this);
         var $target = $($this.attr('data-target'));
         switch ($this.attr('data-toggle')) {

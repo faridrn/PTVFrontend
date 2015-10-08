@@ -44,13 +44,13 @@
                     &:after { display: block; content: ""; width: 0; height: 0; border-top: 5px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent; position: absolute; right: (@grid-gutter-width / 2); top: 15px; }
                 }
                 &:hover {
-                    .child { display: block; }
+                    /*.child { display: block; }*/
                 }
             }
             a {
                 display: block; line-height: 31px; font-weight: 500; padding: 0 ((@grid-gutter-width / 2)); position: relative;
             }
-            &:hover {
+            &:hover, &.active {
                 a { background: @blue; }
             }
             .child {
