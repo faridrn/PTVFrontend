@@ -15,7 +15,7 @@ $(function () {
                 $search.on('click', function(e){
                     if (e.target !== this)
                         return;
-                    $search.fadeOut(500)
+                    $search.fadeOut(500);
                 });
             });
         }
