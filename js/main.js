@@ -1,6 +1,6 @@
 $(function () {
     // Search collapse
-    $(".header-menu .search > a").click(function (e) {
+    $(document).on('click', ".header-menu .search > a", function (e) {
         var $search = $(this).next();
         if (!$("body").hasClass('_xs')) {
             $search.animate({width: 260, padding: 5}, function () {
@@ -22,7 +22,7 @@ $(function () {
         e.preventDefault();
     });
 
-    $(".menu li.haschild").hover(function (e) {
+    $("#navbar .menu li.haschild").hover(function (e) {
         var $li = $(this);
         $li.find(".child").fadeIn(200, function () {
             $li.addClass("active");
