@@ -1,0 +1,29 @@
+.item {
+    color: @text-dark;
+    .item-header {
+        .page-header { border: 0 none; margin-top: @grid-gutter-width; font-size: 48px; }
+        .item-meta {
+            .breadcrumb {
+                background: transparent; padding: 0; margin-right: 25%;
+                li {
+                    a {  }
+                }
+            }
+            .item-date { width: 25%; text-align: right; }
+        }
+    }
+    .item-body {
+        .item-image {  }
+        figure {
+            margin-bottom: @grid-gutter-width;
+            img { display: block; width: 100%; height: auto; }
+            figcaption { font-size: 12px; padding: (@grid-gutter-width / 2) 0; }
+        }
+        .item-author {  }
+        .item-text {
+            p {
+                &.summary {  }
+            }
+        }
+    }
+}
