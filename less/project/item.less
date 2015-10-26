@@ -4,26 +4,33 @@
         .page-header { border: 0 none; margin-top: @grid-gutter-width; font-size: 48px; }
         .item-meta {
             .breadcrumb {
-                background: transparent; padding: 0; margin-right: 25%;
+                background: transparent; padding: 0; margin-right: 25%; margin-bottom: 0;
                 li {
-                    a {  }
+                    a { color: @gray; }
                 }
             }
-            .item-date { width: 25%; text-align: right; }
+            .item-date { width: 25%; text-align: right; font-size: 13px; color: @gray-light; }
         }
     }
     .item-body {
+        clear: both; margin-top: (@grid-gutter-width / 2);
         .item-image {  }
         figure {
             margin-bottom: @grid-gutter-width;
             img { display: block; width: 100%; height: auto; }
             figcaption { font-size: 12px; padding: (@grid-gutter-width / 2) 0; }
         }
-        .item-author {  }
+        .item-author {
+            font-size: 18px; font-weight: 400; color: #666; margin-bottom: (@grid-gutter-width / 2);
+            a:hover { color: @blue; }
+        }
         .item-text {
+            width: 75%;
             p {
+                font-size: 18px; font-weight: 300;
                 &.summary {  }
             }
+            figure { margin-top: (@grid-gutter-width); }
         }
     }
 }
