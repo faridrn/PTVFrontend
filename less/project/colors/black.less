@@ -1,6 +1,15 @@
 body._black {
     .page-heading {
         .page-header { color: @gray-lighter; }
+        .subcategories {
+            li {
+                a {
+                    background: @gray-dark; color: @gray-light;
+                    &:hover { background: @navy; color: #fff; }
+                }
+                &.active a { background: @navy; color: #fff; }
+            }
+        }
     }
     .item {
         .item-body {
@@ -15,10 +24,11 @@ body._black {
         .panel-title, .panel-heading {
             h2, h2 a { color: @gray-lighter; }
         }
+        &.social {
+            ul li a { border-color: @gray }
+        }
         &.list {
-            .panel-body ul li {
-                border-top-color: @gray;
-            }
+            .panel-body ul li { border-top-color: @gray; }
         }
     }
 }
