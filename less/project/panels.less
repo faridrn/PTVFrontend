@@ -1,5 +1,6 @@
 .panel {
-    background: transparent; margin-bottom: 0;
+    background: transparent;
+    clear: both; margin-bottom: @grid-gutter-width;
     .panel-title {
         a {  }
     }
@@ -13,8 +14,9 @@
         }
     }
     .panel-footer {
+        border-radius: 0;
         .more {
-            a { display: block; float: right; color: @blue; }
+            a { display: block; text-align: right; color: @blue; }
         }
     }
     &._padding { padding: @grid-gutter-width; }
@@ -39,7 +41,7 @@
             }
         }
         .panel-footer {
-            /*margin-top: (@grid-gutter-width / 2);*/
+            background: transparent;
         }
     }
     &.items {
