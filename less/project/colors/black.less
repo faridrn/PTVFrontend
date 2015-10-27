@@ -1,0 +1,24 @@
+body._black {
+    .page-heading {
+        .page-header { color: @gray-lighter; }
+    }
+    .item {
+        .item-body {
+            color: @gray-lighter;
+            figure figcaption { color: @gray-lighter; }
+            .item-author { color: @gray-light; }
+            .item-text {  }
+        }
+    }
+    // Panels
+    .panel {
+        .panel-title, .panel-heading {
+            h2, h2 a { color: @gray-lighter; }
+        }
+        &.list {
+            .panel-body ul li {
+                border-top-color: @gray;
+            }
+        }
+    }
+}
