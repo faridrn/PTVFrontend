@@ -1,14 +1,16 @@
-&._black { background: @black; color: #fff; }
-&._graylighter { background: @gray-lighter; }
-&._graylight { background: @gray-light; }
-&._gray { background: @gray-darker; color: #fff; }
-&._navy { background: @navy; color: #fff; }
-&._bluedark { background: @blue-dark; color: #fff; }
-&._bluedarker { background: @blue-darker; color: #fff; }
-&._black, &._gray, &._navy, &._bluedark, &._bluedarker {
-    a {
-        color: @gray-lighter;
-        &:hover, &:visited, &:active, &:focus, &:link { color: #fff; }
+body, .wrapper, .panel {
+    &._black { background: @black; color: #fff; }
+    &._graylighter { background: @gray-lighter; }
+    &._graylight { background: @gray-light; }
+    &._gray { background: @gray-darker; color: #fff; }
+    &._navy { background: @navy; color: #fff; }
+    &._bluedark { background: @blue-dark; color: #fff; }
+    &._bluedarker { background: @blue-darker; color: #fff; }
+    &._black, &._gray, &._navy, &._bluedark, &._bluedarker {
+        a {
+            color: @gray-lighter;
+            &:hover, &:visited, &:active, &:focus, &:link { color: #fff; }
+        }
     }
 }
 #main {
