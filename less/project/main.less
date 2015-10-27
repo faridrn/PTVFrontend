@@ -5,6 +5,12 @@
 &._navy { background: @navy; color: #fff; }
 &._bluedark { background: @blue-dark; color: #fff; }
 &._bluedarker { background: @blue-darker; color: #fff; }
+&._black, &._gray, &._navy, &._bluedark, &._bluedarker {
+    a {
+        color: @gray-lighter;
+        &:hover, &:visited, &:active, &:focus, &:link { color: #fff; }
+    }
+}
 #main {
     .wrapper {
         padding: @grid-gutter-width 0;
