@@ -15,3 +15,18 @@
     /*background: @gray-lighter;*/
 }
 .page-header { border: 0 none; margin-top: @grid-gutter-width; font-size: 48px; }
+.page-heading {
+    .page-header + .subcategories { margin-top: -@grid-gutter-width; margin-bottom: @grid-gutter-width * 2; }
+    .subcategories + .subcategories { margin-top: -((@grid-gutter-width / 2) * 3);  margin-bottom: @grid-gutter-width * 2; }
+    .subcategories {
+        padding: 0; list-style: none; min-height: 24px;
+        li {
+            float: left; margin-right: (@grid-gutter-width / 2);
+            a {
+                padding: 3px 6px; background: lighten(@gray-lighter, 3%); font-size: 16px; font-weight: 400; color: @gray-dark;
+                &:hover { background: lighten(@blue-light, 0%); color: #fff; }
+            }
+            &.active a { background: lighten(@blue-light, 0%); color: #fff; }
+        }
+    }
+}
