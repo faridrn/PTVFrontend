@@ -33,3 +33,22 @@ a {
         li { display: inline-block; }
     }
 }
+
+
+.pagination {
+    border-radius: 0;
+    > li {
+        > a, > span {
+            border-radius: 100%; margin: 0 2px; color: @text-color;
+        }
+        &:first-child, &:last-child {
+            > a, > span { border-radius: 100%; }
+        }
+    }
+    > li > a, > li > span {
+        &:hover, &:focus { color: #fff; background-color: @blue; border-color: transparent; }
+    }
+    > .active > a, > .active > span {
+        &, &:hover, &:focus { color: #fff; background-color: @blue; border-color: transparent;}
+    }
+}
