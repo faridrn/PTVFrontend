@@ -33,11 +33,44 @@
                     h3, p { max-height: none; }
                 }
             }
+            &.inner-page {
+                clear: left; margin-top: @grid-gutter-width;
+                .panel-body ul li {
+                    &, &:first-child {
+                        .dsc {
+                            h3 { padding-top: 0; }
+                            p a { padding-top: @grid-gutter-width / 2; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .item {
+        .item-body .item-text { width: 80%; }
+        .item-sharings {
+            position: static; margin-top: @grid-gutter-width;
+            ul li {
+                float: left; margin-top: 0 !important;
+                & ~ li { margin-left: (@grid-gutter-width / 2); }
+                &.margin-top { margin-left: @grid-gutter-width * 2; }
+            }
+        }
+    }
+    .itemlist {
+        .page-heading {
+            .subcategories {
+                margin-top: -(@grid-gutter-width / 2) * 3;
+                li {
+                    margin-top: @grid-gutter-width / 2;
+                }
+            }
         }
     }
 }
 // SM
 @media (max-width: @screen-sm-max) { 
+    .page-header { font-size: 38px; }
     .panel {
         &.social {
             ul {
@@ -61,6 +94,14 @@
                 ul li { min-height: 180px; }
             }
         }
+        &.top-news {
+            &.inner-page {
+                margin-top: 0;
+            }
+        }
+    }
+    .item {
+        .item-body .item-text { width: 85%; }
     }
 }				     
 // XS
@@ -149,6 +190,7 @@
             & > .row, & > ol { display: none; }
         }
     }
+    .page-header { margin-top: @grid-gutter-width * 2; font-size: 32px; }
     .panel {
         &.items {
             .panel-body ul {
@@ -177,6 +219,16 @@
                         }
                     }
                 }
+                &.top-news {
+                    &.inner-page {
+                        margin-top: @grid-gutter-width;
+                        .panel-body ul li {
+                            &, &:first-child {
+                                .dsc { padding-left: 0; }
+                            }
+                        }
+                    }
+                }
             }
             &.first-featured.featured-left, &.first-featured.featured-right {
                 .panel-body ul {
@@ -189,6 +241,16 @@
         }
         &.poll {
             .panel-title { display: none; }
+        }
+    }
+    .item {
+        .page-heading .item-meta {
+            .item-date { width: 35%; }
+            .breadcrumb { margin-right: 35%; }
+        }
+        .item-body {
+            .item-author { font-size: 16px; }
+            .item-text p { font-size: 16px; }
         }
     }
     // Misc
