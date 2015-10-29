@@ -24,11 +24,40 @@ body._black {
         .panel-title, .panel-heading {
             h2, h2 a { color: @gray-lighter; }
         }
+        .panel-footer {
+            &._graylighter {
+                background: @gray-darker;
+                .pagination li {
+                    a, span { background: @gray-dark; border-color: @gray; }
+                    &:hover, &.active {
+                        a, span { background: @blue-darker; }
+                    }
+                }
+            }
+        }
         &.social {
             ul li a { border-color: @gray }
         }
         &.list {
             .panel-body ul li { border-top-color: @gray; }
+        }
+        &.items {
+            &.top-news {
+                .panel-body li {
+                    &:first-child {
+                        .dsc {
+                            h3 a { color: @gray-lighter; }
+                            p, p a { color: @gray-light; }
+                        }
+                        &:hover {
+                            .dsc {
+                                h3 a { color: @blue; }
+                                p, p a { color: @gray-lighter; }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
