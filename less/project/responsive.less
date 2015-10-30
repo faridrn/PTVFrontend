@@ -238,9 +238,20 @@
                     }
                 }
             }
+            &.item-rows {
+                .panel-body ul li .img { display: none; }
+            }
         }
         &.poll {
             .panel-title { display: none; }
+        }
+        &.search {
+            .search-row .form-group {
+                & > input {
+                    width: 100%;
+                    & + * { width: 100%; }
+                }
+            }
         }
     }
     .item {
