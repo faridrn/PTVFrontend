@@ -22,7 +22,7 @@
     &._padding { padding: @grid-gutter-width; }
     &._margin-top { margin-top: (@grid-gutter-width * 5) + 3px; /* 103px */ }
     &._margin-top-half { margin-top: (@grid-gutter-width * 4) - 10px; /* 70px */ }
-    
+
     &.list {
         .panel-title {
             h2 { font-size: 24px; }
@@ -118,6 +118,21 @@
                             font-size: 18px; padding-top: 0; max-height: 70px;
                             a { padding: 0; }
                         }
+                    }
+                }
+            }
+        }
+        &.item-rows {
+            .panel-body {
+                ul {
+                    margin: 0;
+                    li {
+                        width: 100%; height: auto; min-height: 0; border-top: 1px solid @gray-lighter; margin-bottom: 0; padding: @grid-gutter-width / 2;
+                        p {
+                            margin-bottom: 0;
+                            .time { font-size: 12px; display: block; color: @gray; }
+                        }
+                        &:nth-child(2n+1) { background: lighten(@gray-lighter, 6%); }
                     }
                 }
             }
