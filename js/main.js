@@ -37,14 +37,15 @@ $(function () {
     $("body._xs .footer-menu").on('click', "h4 a", function (e) {
         var $menu = $(this).parents(".footer-menu:first");
         var $child = $menu.find(".row, ol");
-        if ($child.is(':hidden'))
+        if ($child.is(':hidden')) {
             $child.slideDown(function () {
                 $menu.addClass("open");
             });
-        else
+        } else {
             $child.slideUp(function () {
                 $menu.removeClass("open");
             });
+        }
         e.preventDefault();
     });
 
