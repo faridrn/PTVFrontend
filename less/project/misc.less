@@ -3,6 +3,7 @@ a {
     transition: 0.2s all; color: @text-color;
     &:hover, &:visited, &:active, &:focus, &:link { text-decoration: none; outline: 0 none; color: #000; }
 }
+label, strong { font-weight: 500; }
 .menu {
     list-style: none; padding: 0; position: relative;
     li {
@@ -45,4 +46,5 @@ a {
 
 .alert {
     border-radius: 0;
+    background: @gray-lighter; border: 1px solid @gray-light; color: @gray-dark;
 }
