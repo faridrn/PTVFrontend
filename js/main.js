@@ -23,18 +23,36 @@ $(function () {
     });
 
     $("#navbar .menu li.haschild").hover(function (e) {
-        var $li = $(this);
-        $li.find(".child").fadeIn(200, function () {
-            $li.addClass("active");
-        });
+        if (!$("body").hasClass('_xs')) {
+            var $li = $(this);
+            $li.find(".child").fadeIn(100, function () {
+                $li.addClass("active");
+            });
+        }
     }, function () {
-        var $li = $(this);
-        $li.find(".child").delay(200).fadeOut(200, function () {
-            $li.removeClass("active");
-        });
+        if (!$("body").hasClass('_xs')) {
+            var $li = $(this);
+            $li.find(".child").fadeOut(100, function () {
+                $li.removeClass("active");
+            });
+        }
+    });
+    
+    $("body._xs #navbar .menu li.haschild > a").click(function (e) {
+        var $li = $(this).parent();
+        var $child = $li.find(".child:first");
+        if (!$child.is(":visible")) {
+            $child.slideDown(200);
+            $li.addClass('open');
+        } else {
+            $child.slideUp(200);
+            $li.removeClass('open');
+        }
+        e.preventDefault();
     });
 
     $("body._xs .footer-menu").on('click', "h4 a", function (e) {
+        e.preventDefault();
         var $menu = $(this).parents(".footer-menu:first");
         var $child = $menu.find(".row, ol");
         if ($child.is(':hidden')) {
@@ -46,7 +64,7 @@ $(function () {
                 $menu.removeClass("open");
             });
         }
-        e.preventDefault();
+        return false;
     });
 
     $(document).on('click', "[data-toggle]", function (e) {
