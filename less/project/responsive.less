@@ -147,7 +147,7 @@
                     & ~ li { border-top: 1px solid @blue-dark; }
                     a { font-weight: 400; line-height: 40px; }
                     .child {
-                        position: static; height: auto; width: auto; margin-left: @grid-gutter-width;
+                        position: static; height: auto; width: auto; margin: 0; padding: 0; border: 0 none;
                         ul {
                             padding: 0; background: @blue-dark;
                             li {
@@ -201,9 +201,9 @@
                     margin: 0;
                     li {
                         padding: 0; float: none; width: 100%; height: 72px; min-height: 0;
-                        .img { width: 30%; float: left; }
+                        .img { width: 130px; float: left; }
                         .dsc {
-                            margin-left: 30%; padding-left: (@grid-gutter-width / 2); height: 72px;
+                            margin-left: 130px; padding-left: (@grid-gutter-width / 2); height: 72px;
                             h3 {
                                 padding-top: 0; height: 100%;
                                 a { padding-top: (@grid-gutter-width / 2); height: 100%; }
