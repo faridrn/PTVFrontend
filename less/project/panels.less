@@ -121,6 +121,7 @@
                     }
                 }
             }
+            margin-bottom: 0;
         }
         &.item-rows {
             .panel-body {
@@ -274,6 +275,9 @@
                     width: 80%; float: left;
                     & + * { display: inline-block; width: 20%; }
                 }
+            }
+            &.advanced {
+                label { font-size: 12px; text-indent: -20px; }
             }
             &.submit { margin: (@grid-gutter-width) 0 (@grid-gutter-width * 2); }
         }
