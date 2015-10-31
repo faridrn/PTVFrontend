@@ -38,7 +38,7 @@
         li {
             font-size: 18px;
             &.haschild {
-                position: static;
+                position: relative;
                 & > a {
                     padding-right: ((@grid-gutter-width * 3) / 2);
                     &:after { display: block; content: ""; width: 0; height: 0; border-top: 5px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent; position: absolute; right: (@grid-gutter-width / 2); top: 15px; }
@@ -51,12 +51,17 @@
                 display: block; line-height: 31px; font-weight: 500; padding: 0 ((@grid-gutter-width / 2)); position: relative;
             }
             &:hover, &.active {
-                a { background: @blue; }
+                & > a { background: @blue; }
             }
             .child {
-                position: absolute; background: @blue; width: 700px; z-index: 190; height: 32px; left: 0; top: 31px; display: none;
+                position: absolute; background: @blue-darker; width: 300px; z-index: 190; left: 0; top: 31px; padding: (@grid-gutter-width / 2); border-top: 4px solid @blue;
+                display: none;
                 ul {
-                    margin-left: 0; padding: 0 @grid-gutter-width;
+                    margin-left: 0; padding: 0 0;
+                    li {
+                        float: none; display: block;
+                        a { font-weight: 400; }
+                    }
                 }
             }
         }
