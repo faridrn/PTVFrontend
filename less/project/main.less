@@ -25,7 +25,7 @@ body, .wrapper, .panel {
 .page-heading {
     strong { font-weight: 500; }
     .page-header + .subcategories { margin-top: -@grid-gutter-width; margin-bottom: @grid-gutter-width * 2; }
-    .subcategories + .subcategories { margin-top: -((@grid-gutter-width / 2) * 3);  margin-bottom: @grid-gutter-width * 2; }
+    .subcategories + .subcategories { margin-top: -((@grid-gutter-width / 2) * 3);  margin-bottom: @grid-gutter-width * 3; }
     .subcategories {
         padding: 0; list-style: none; min-height: 24px;
         li {
@@ -35,6 +35,12 @@ body, .wrapper, .panel {
                 &:hover { background: lighten(@blue-light, 0%); color: #fff; }
             }
             &.active a { background: lighten(@blue-light, 0%); color: #fff; }
+        }
+    }
+    .subcategories {
+        margin-top: -(@grid-gutter-width / 2) * 3;
+        li {
+            margin-top: @grid-gutter-width / 2;
         }
     }
 }
