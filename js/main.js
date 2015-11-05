@@ -38,7 +38,7 @@ $(function () {
         }
     });
     
-    $("body._xs #navbar .menu li.haschild > a").click(function (e) {
+    $(document).on('click', "body._xs #navbar .menu li.haschild > a", function (e) {
         var $li = $(this).parent();
         var $child = $li.find(".child:first");
         if (!$child.is(":visible")) {
@@ -51,7 +51,7 @@ $(function () {
         e.preventDefault();
     });
 
-    $("body._xs .footer-menu").on('click', "h4 a", function (e) {
+    $(document).on('click', "body._xs .footer-menu h4 a", function (e) {
         e.preventDefault();
         var $menu = $(this).parents(".footer-menu:first");
         var $child = $menu.find(".row, ol");
