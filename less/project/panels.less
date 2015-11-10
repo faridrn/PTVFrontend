@@ -3,6 +3,12 @@
     clear: both; margin-bottom: @grid-gutter-width;
     .panel-title {
         a {  }
+        .subcategories {
+            display: inline-block; margin-bottom: 0; margin: (@grid-gutter-width / 2 + 4) 0 0 0; vertical-align: baseline; float: right;
+            li {
+                &:last-child { margin-right: 0; }
+            }
+        }
     }
     .panel-body {
         .section {
@@ -22,6 +28,10 @@
     &._padding { padding: @grid-gutter-width; }
     &._margin-top { margin-top: (@grid-gutter-width * 5) + 3px; /* 103px */ }
     &._margin-top-half { margin-top: (@grid-gutter-width * 4) - 10px; /* 70px */ }
+    &.has-tabs {
+        transition: height 0.2s ease 0s;
+        h2 { display: inline-block; }
+    }
 
     &.list {
         .panel-title {
@@ -152,12 +162,12 @@
         .panel-body {
             ul {
                 li {
-                    min-height: 0;
+                    min-height: 0; width: 33.33333%;
                     .img {  }
                     .dsc { 
                         height: auto;
                         h3 { font-size: 18px; max-height: none; }
-                        p { max-height: none; }
+                        p { max-height: none; display: none; }
                     }
                     &:first-child {
                         .dsc {
@@ -179,7 +189,7 @@
                                 }
                             }
                             p {
-                                font-size: 16px;
+                                font-size: 16px; display: block;
                                 a {
                                     padding-top: 0;
                                 }

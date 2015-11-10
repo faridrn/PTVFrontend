@@ -21,6 +21,14 @@ $(function () {
         }
         e.preventDefault();
     });
+    
+    $(document).on('click', ".panel.has-tabs .header-tabs a", function(e) {
+        // Load items with ajax
+        var $list = $(this).parents("ul:first");
+        $list.find("> li").removeClass('active');
+        $(this).parent().addClass('active');
+        e.preventDefault();
+    });
 
     $("#navbar .menu li.haschild").hover(function (e) {
         if (!$("body").hasClass('_xs')) {
