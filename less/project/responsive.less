@@ -97,6 +97,14 @@
             &.first-featured .panel-body {
                 ul li { min-height: 180px; }
             }
+            &.single-column {
+                .panel-body ul li { width: 50%; }
+                &.items-horizontal {
+                    .panel-body ul li {
+                        .dsc h3 { font-size: 18px; }
+                    }
+                }
+            }
         }
         &.top-news {
             &.inner-page {
@@ -199,6 +207,14 @@
         &.items {
             .panel-body ul {
                 li { width: 50%; }
+            }
+            &.single-column {
+                .panel-body ul li { width: 100%; }
+                &.items-horizontal {
+                    .panel-body ul li {
+                        .dsc h3 { font-size: 18px; }
+                    }
+                }
             }
             &.top-news {
                 .panel-body ul {
