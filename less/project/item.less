@@ -18,7 +18,7 @@
         figure {
             margin-bottom: @grid-gutter-width;
             img { display: block; width: 100%; height: auto; }
-            figcaption { font-size: 12px; padding: (@grid-gutter-width / 2) 0; color: #666; }
+            figcaption { font-size: 12px; padding: (@grid-gutter-width / 2); color: #666; background: lighten(@gray-lighter, 2%); }
         }
         .item-author {
             font-size: 18px; font-weight: 400; color: #666; margin-bottom: (@grid-gutter-width / 2);
@@ -27,7 +27,7 @@
         .item-text {
             width: 75%;
             p {
-                font-size: 18px; font-weight: 300;
+                font-size: 18px; font-weight: 300; text-align: justify;
                 &.summary { font-weight: 400; }
             }
             figure { margin-top: (@grid-gutter-width); }
@@ -35,7 +35,7 @@
         blockquote.fact-corner { border-left: 0 none; margin: 0 -25% 0 0; width: 50%; float: right; }
     }
     .item-sharings {
-        position: fixed; left: 100px; top: 160px;
+        position: fixed; left: 100px; top: 160px; transition: top 0.35s;
         ul {
             list-style: none; padding: 0; margin: 0;
             li {

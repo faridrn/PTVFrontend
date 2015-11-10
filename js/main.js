@@ -106,6 +106,15 @@ function socialIcons () {
 }
 socialIcons ();
 
+$(window).scroll(function() {
+    var maxScroll = ($(document).height() - $(window).height());
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (maxScroll - scroll <= windowHeight)
+        $(".item-sharings").css({'top': 60});
+    else
+        $(".item-sharings").css({'top': 160});
+});
 $(window).resize(function () { // Change width value on user resize, after DOM
     responsive_resize();
     socialIcons();
