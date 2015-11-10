@@ -25,9 +25,17 @@
             a { display: block; text-align: right; color: @blue; }
         }
     }
-    &._padding { padding: @grid-gutter-width; }
+    &._padding {
+        padding: 0 @grid-gutter-width @grid-gutter-width;
+        .panel-title h2 { margin-top: 0; padding-top: @grid-gutter-width; }
+    }
     &._margin-top { margin-top: (@grid-gutter-width * 5) + 3px; /* 103px */ }
     &._margin-top-half { margin-top: (@grid-gutter-width * 4) - 10px; /* 70px */ }
+    &._graylighter {
+        &.list .panel-body ul li {
+            border-top-color: @gray-light;
+        }
+    }
     &.has-tabs {
         transition: height 0.2s ease 0s;
         h2 { display: inline-block; }
@@ -87,6 +95,12 @@
                     &:hover {
                         h3 a { color: @blue }
                         img { filter: brightness(110%) contrast(110%); -webkit-filter: brightness(110%) contrast(110%) }
+                    }
+                    &.video {
+                        .img {
+                            position: relative;
+                            a:before { display: block; content: '\e813'; font-family: "icon"; position: absolute; top: 50%; left: 50%; color: #fff; font-size: 18px; width: 36px; height: 36px; margin: -18px 0 0 -18px; border:2px solid #fff; text-align: center; line-height: 32px; border-radius: 100%; box-shadow: 0 0 3px @gray-dark; font-style: normal; font-weight: normal; text-indent: .1em; z-index: 800; }
+                        }
                     }
                 }
             }
@@ -264,6 +278,7 @@
     }
     &.poll {
         margin-bottom: @grid-gutter-width;
+        button { border-radius: 0; }
         .question { margin-bottom: @grid-gutter-width; }
         .form-group {
             label {  }

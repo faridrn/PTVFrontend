@@ -1,6 +1,14 @@
 // MD
 @media (max-width: @screen-md-max) { 
     .panel {
+        &._graylighter {
+            &.list .panel-body ul li {
+                a {
+                    margin-right: 0;
+                    .time { display: none; }
+                }
+            }
+        }
         &.social {
             ul li ~ li { margin-left: 1px; }
         }
@@ -67,6 +75,7 @@
 @media (max-width: @screen-sm-max) { 
     .page-header { font-size: 38px; }
     .panel {
+        &._margin-top { margin-top: 0; }
         &.social {
             ul {
                 text-align: center;
