@@ -100,9 +100,13 @@ $(function () {
 });
 
 function socialIcons () {
-    var offset = $("#mainbody #item").length ? $("#mainbody #item").offset() : null;
-    if (offset && $(".item-sharings").length)
-        $(".item-sharings").css({'left': offset.left - 60});
+    var offset = $("#item").length ? $("#item").offset() : null;
+    if (offset && $(".item-sharings").length) {
+        if (!$("body").hasClass('rtl'))
+            $(".item-sharings").css({'left': offset.left - 60});
+        else
+            $(".item-sharings").css({'right': $("#mainbody .container:first").offset().left - 60});
+    }
 }
 socialIcons ();
 
