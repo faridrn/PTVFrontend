@@ -167,13 +167,13 @@
                         &:nth-child(2n+1) { background: lighten(@gray-lighter, 6%); }
                         p {
                             margin-bottom: 0; max-height: none; height: auto;
-                            .time { font-size: 12px; display: block; color: @gray; }
+                            .time { font-size: 12px; display: block; color: @gray; position: static; text-shadow: 0 0 transparent; }
                         }
                         .img { width: 25%; float: left; margin-right: @grid-gutter-width / 2; }
                         .dsc {
                             height: auto;
                             h3 { padding-top: 0; max-height: none; height: auto; }
-                            .time { padding-top: @grid-gutter-width / 2; }
+                            .time { padding-top: @grid-gutter-width / 2; position: static; text-shadow: 0 0 transparent; }
                         }
                     }
                 }
