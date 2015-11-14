@@ -1,5 +1,5 @@
-@font-size-base: 18px;
 .rtl {
+    font-size: 18px;
     .wrapper, .container,
     input, textarea, button { text-align: right; direction: rtl; font-family: 'B Mitra', 'Mitra', 'BMitra', 'Tahoma'; }
     ol { padding-right: 0; }
@@ -65,13 +65,16 @@
             }
             &.inner-page .panel-body ul li {
                 .img { float: right; }
-                .dsc { padding-left: 0; margin-left: 0; padding-right: @grid-gutter-width; margin-right: (@grid-gutter-width / 2); }
+                .dsc {
+                    padding-left: 0; margin-left: 0; padding-right: @grid-gutter-width; margin-right: (@grid-gutter-width / 2);
+                }
+                &:first-child .dsc p { max-height: none; display: block; }
             }
         }
         &.items {
             .panel-body ul li {
                 .dsc {
-                    h3 { font-size: @font-size-base; font-weight: bold; }
+                    h3 { font-size: 18px; font-weight: bold; }
                     p { max-height: 58px; }
                 }
                 .time {
@@ -88,6 +91,11 @@
                     .dsc { margin-left: 0; margin-right: 50%; }
                 }
             }
+            &.inner-page .panel-body ul li {
+                .dsc {
+                    p { display: none; }
+                }
+            }
         }
     }
     // Item page
@@ -99,6 +107,7 @@
         .item-body {
             blockquote.fact-corner { float: left; margin-right: 0; margin-left: -25%; }
         }
+        .item-sharings { left: auto; }
     }
     
     #footer {
