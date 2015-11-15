@@ -305,6 +305,17 @@
             label {  }
             input { margin-right: (@grid-gutter-width / 2); }
         }
+
+        // Poll Results
+        #poll-form {
+            & > ul { margin-top: 20px; list-style: none; padding: 0; }
+            .percent {
+                margin: 5px 0 10px; height: 10px; border: 1px solid @gray-dark; padding: 1px;
+                .bar {
+                    height: 6px; background: @gray-dark;
+                }
+            }
+        }
     }
     &.ads {
         .panel-body {

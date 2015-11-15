@@ -22,6 +22,11 @@ $(function () {
         e.preventDefault();
     });
     
+    $(".to-top").click(function(e) {
+        $("html, body").animate({'scrollTop': 0}, 800, 'easeOutSine');
+        e.preventDefault();
+    });
+    
     $(document).on('click', ".panel.has-tabs .header-tabs a", function(e) {
         // Load items with ajax
         var $list = $(this).parents("ul:first");
