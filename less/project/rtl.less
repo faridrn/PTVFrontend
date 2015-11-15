@@ -1,27 +1,38 @@
 .rtl {
     font-size: 18px;
-    .wrapper, .container,
-    input, textarea, button { text-align: right; direction: rtl; font-family: 'B Mitra', 'Mitra', 'BMitra', 'Tahoma'; }
     ol { padding-right: 0; }
-    
+    .wrapper, .container, input, textarea, button { text-align: right; direction: rtl; font-family: 'B Mitra', 'Mitra', 'BMitra', 'Tahoma'; }
     .wrapper {
         .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { float: right; }
     }
     #footer, #masthead { [class*="col-"] { float: left; } }
-    
-    .subcategories li { float: right; margin-right: 0; margin-left: @grid-gutter-width /2; }
-    .pagination { padding-right: 0; }
-    
+    #masthead .logo { float: left; }
     // Menu
     #navbar {
         .menu li {
             .child { left: auto; right: 0; }
+            & > a { line-height: 38px; }
+            a {
+                font-family: 'BMitra Bold', 'B Mitra', 'Mitra', 'BMitra', 'Tahoma';
+            }
         }
     }
+    #footer {
+        .farsi-menu {
+            padding: (@grid-gutter-width * 3) 0 (@grid-gutter-width);
+        }
+    }
+
+    .subcategories li { float: right; margin-right: 0; margin-left: @grid-gutter-width /2; }
+    .pagination { padding-right: 0; }
+    
     // Panels
     .panel {
         .panel-title {
-            .subcategories { float: left; }
+            .subcategories {
+                float: left;
+                li { margin-left: 0; margin-right: (@grid-gutter-width / 2); }
+            }
         }
         .panel-body {
             .section {
@@ -32,10 +43,10 @@
         .panel-footer {
             .more a { text-align: left; }
         }
-        
+
         &.search {
             .search-row .form-group {
-                 & > input { float: right; }
+                & > input { float: right; }
             }
         }
         &.social {
@@ -109,10 +120,67 @@
         }
         .item-sharings { left: auto; }
     }
-    
-    #footer {
-        .farsi-menu {
-            padding: (@grid-gutter-width * 3) 0 (@grid-gutter-width);
+
+
+    // Responsice RTL
+    // MD
+    @media (max-width: @screen-md-max) {
+        .panel {
+            &.items {
+                &.items-horizontal .panel-body ul li {
+                    .dsc h3 { font-size: 15px; }
+                }
+            }
+        }
+    }
+    // SM
+    @media (max-width: @screen-sm-max) {
+        .panel {
+            &.top-news {
+                .panel-body ul {
+                    li:first-child {
+                        .section { display: none; }
+                        .dsc {
+                            text-align: center;
+                            h3 { font-size: 24px; }
+                        }
+                    }
+                    li {
+                        .img { float: right; }
+                        .dsc { margin-left: 0; margin-right: 130px; padding-left: 0; padding-right: @grid-gutter-width / 2; }
+                    }
+                }
+            }
+            &.items {
+                .panel-body ul li {
+                    .dsc p { max-height: 100px; }
+                }
+                &.first-featured {
+                    .panel-body ul li:first-child {
+                        .dsc p { display: block; }
+                    }
+                }
+            }
+        }
+    }
+    // XS
+    @media (max-width: @screen-xs-max) {
+        .panel {
+            &.items {
+                .panel-body ul li {
+                    .dsc p { display: none; }
+                }
+            }
+        }
+        #footer {
+            .farsi-menu {
+                /*margin-bottom: 80px;*/
+                li {
+                    display: block; float: none;
+                    a { display: block; }
+                }
+            }
+            .footer-logo { left: 0; }
         }
     }
 }

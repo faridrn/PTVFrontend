@@ -70,7 +70,7 @@
     }
     .itemlist {
         .page-heading {
-            
+
         }
     }
 }
@@ -88,6 +88,11 @@
             }
         }
         &.items {
+            .panel-body ul li {
+                .section {
+                    .time { display: none; }
+                }
+            }
             &.items-horizontal .panel-body ul li {
                 .dsc {
                     height: 48px;
@@ -129,6 +134,7 @@
         .menu {
             li {
                 background: @blue-darker; width: 32px; height: 32px; position: relative;
+                & ~ li { margin-left: (@grid-gutter-width / 2); }
                 & > a {
                     font-size: 0; text-align: center; line-height: 32px; width: 32px; color: @gray-lighter;
                     i { font-size: 18px; }
@@ -212,7 +218,9 @@
     .panel {
         &.items {
             .panel-body ul {
-                li { width: 50%; }
+                li {
+                    width: 50%;
+                }
             }
             &.single-column {
                 .panel-body ul li { width: 100%; }
@@ -221,6 +229,9 @@
                         .dsc h3 { font-size: 18px; }
                     }
                 }
+            }
+            &.has-summary {
+                .panel-body ul li { min-height: 210px; }
             }
             &.top-news {
                 .panel-body ul {
@@ -240,18 +251,16 @@
                             .img { width: 100%; float: none; }
                             .dsc {
                                 margin-left: 0; height: auto;
-                                p { display: none; }
+                                p { display: none !important; }
                             }
                         }
                     }
                 }
-                &.top-news {
-                    &.inner-page {
-                        margin-top: @grid-gutter-width;
-                        .panel-body ul li {
-                            &, &:first-child {
-                                .dsc { padding-left: 0; }
-                            }
+                &.inner-page {
+                    margin-top: @grid-gutter-width;
+                    .panel-body ul li {
+                        &, &:first-child {
+                            .dsc { padding-left: 0; }
                         }
                     }
                 }
@@ -270,6 +279,7 @@
         }
         &.poll {
             .panel-title { display: none; }
+            .panel-body { padding-top: @grid-gutter-width; }
         }
         &.search {
             .search-row .form-group {
