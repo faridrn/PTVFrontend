@@ -40,6 +40,7 @@
                     height: auto;
                     h3, p { max-height: none; }
                 }
+                &:first-child .dsc { width: 620px; }
             }
             &.inner-page {
                 clear: left; margin-top: @grid-gutter-width;
@@ -115,9 +116,9 @@
             }
         }
         &.top-news {
-            &.inner-page {
-                /*margin-top: 0;*/
-            }
+            .panel-body ul li {
+                &:first-child .dsc { width: 720px; }
+             }
         }
     }
     .item {
@@ -250,7 +251,7 @@
                             height: auto;
                             .img { width: 100%; float: none; }
                             .dsc {
-                                margin-left: 0; height: auto;
+                                margin-left: 0; height: auto; background: transparent;
                                 p { display: none !important; }
                             }
                         }
