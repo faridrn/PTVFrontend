@@ -40,7 +40,30 @@
         transition: height 0.2s ease 0s;
         h2 { display: inline-block; }
     }
+    &.title-overlay {
+        position: relative;
+        .panel-title { float: left; }
+    }
 
+    &.ticker {
+        &.title-overlay {
+            height: (@grid-gutter-width * 2); margin-bottom: 0; line-height: (@grid-gutter-width * 2); overflow: hidden;
+            .panel-title {
+                max-width: 135px; float: none; top: 0; left: 0;
+                h2 { margin: 0; font-size: (@grid-gutter-width); line-height: (@grid-gutter-width * 2) }
+            }
+        }
+        .panel-body {
+            position: absolute; top: 0; left: 0; width: 100%;
+            .close { position: absolute; top: (@grid-gutter-width / 2); right: (@grid-gutter-width / 2); }
+            ul {
+                list-style: none; padding: 0; margin-bottom: 0; margin-left: 135 + (@grid-gutter-width); margin-right: ((@grid-gutter-width / 2) * 3);
+                li {
+                    max-height: @grid-gutter-width * 2; overflow: hidden;
+                }
+            }
+        }
+    }
     &.list {
         .panel-title {
             h2 { font-size: 24px; }

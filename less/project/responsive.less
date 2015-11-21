@@ -80,6 +80,10 @@
     .page-header { font-size: 38px; }
     .panel {
         &._margin-top { margin-top: 0; }
+        &.ticker-breaking {
+            .panel-title { display: none; }
+            .panel-body ul { margin-left: 0; margin-right: ((@grid-gutter-width / 2) * 3) }
+        }
         &.social {
             ul {
                 text-align: center;
@@ -217,6 +221,12 @@
     }
     .page-header { margin-top: @grid-gutter-width * 2; font-size: 32px; }
     .panel {
+        &.ticker-breaking {
+            .panel-body {
+                ul { margin-right: 0 }
+                .close { display: none; }
+            }
+        }
         &.items {
             .panel-body ul {
                 li {
