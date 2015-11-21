@@ -14,6 +14,10 @@
     }
     .item-body {
         clear: both; margin-top: (@grid-gutter-width / 2);
+        a {
+            color: @blue;
+            &:hover { color: @blue-darker; }
+        }
         figure {
             margin-bottom: @grid-gutter-width;
             img { display: block; width: 100%; height: auto; }
@@ -33,6 +37,15 @@
             figure { margin-top: (@grid-gutter-width); }
         }
         blockquote.fact-corner { border-left: 0 none; margin: 0 -25% 0 0; width: 50%; float: right; }
+    }
+    .item-gallery {
+        position: relative;
+        .next, .prev {
+            position: absolute; font-family: 'icon'; color: #fff; text-shadow: 0 0 3px @gray; top: 50%; width: 40px; height: 40px; text-align: center; display: block; line-height: 40px; font-size: 40px; margin-top: -55px; z-index: 100; left: 0; cursor: pointer; transition: 0.2s all;
+            &:hover { color: @gray-light; }
+        }
+        .next { left: auto; right: 0; }
+        
     }
     .item-sharings {
         position: fixed; left: 100px; top: 160px; transition: top 0.35s; width: 35px;
