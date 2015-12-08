@@ -5,6 +5,18 @@
         cursor: pointer; position: absolute; top: (@grid-gutter-width / 2); right: (@grid-gutter-width / 2); background: @gray-dark; color: #fff; width: 50px; height: 50px; text-align: center;
         i { display: block; text-align: center; }
     }
+    .newsletter {
+        float: right; margin-bottom: @grid-gutter-width; font-size: 0;
+        input, button { border-radius: 0; font-size: @font-size-base; transition: all 0.2s; }
+        input {
+            background: @gray-darker; color: @gray-lighter; border-color: @gray;
+            &:focus, &:hover { background: @black }
+        }
+        button {
+            background: @gray-darker; color: @gray-lighter; border: 1px solid @gray-lighter;
+            &:hover { border-color: @gray; }
+        }
+    }
 }
 #sitemap {
     padding: (@grid-gutter-width * 3) 0 (@grid-gutter-width);
