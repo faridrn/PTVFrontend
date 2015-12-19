@@ -137,7 +137,11 @@
             &.featured-left, &.featured-right {
                 .panel-body ul li {
                     width: 25%;
+                    .panel-body ul li {
+                        .img img { height: 152px; }
+                    }
                     &:first-child {
+                        .img img { height: 315px; }
                         .dsc {
                             height: auto;
                             h3, p { max-height: none; }
@@ -160,9 +164,8 @@
                     width: 25%; margin-bottom: 0; min-height: 0;
                     .img {
                         width: 50%; float: left;
-                        a {
-                            border-right: (@grid-gutter-width / 2) solid transparent;
-                        }
+                        img { height: 71px; }
+                        a { border-right: (@grid-gutter-width / 2) solid transparent; }
                     }
                     .dsc {
                         width: 50%; margin-left: 50%; height: 70px;
@@ -177,6 +180,7 @@
                 .panel-body {
                     ul li {
                         margin-bottom: @grid-gutter-width;
+                        .img img { height: 98px; }
                     }
                 }
             }
@@ -221,13 +225,18 @@
             ul {
                 li {
                     min-height: 0; width: 33.33333%;
-                    .img {  }
+                    .img {
+                        img { height: 134px; }
+                    }
                     .dsc { 
                         height: auto;
                         h3 { font-size: 18px; max-height: none; }
                         p { max-height: none; display: none; }
                     }
                     &:first-child {
+                        .img {
+                            img { height: 424px; }
+                        }
                         .dsc {
                             position: absolute; bottom: 0; color: #fff; margin-right: (@grid-gutter-width / 2); width: 753px;
                             background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
@@ -284,7 +293,12 @@
         }
     }
     &.tiles {
-        .panel-body ul li { width: 33.33333%; }
+        .panel-body ul li {
+            width: 33.33333%;
+            .img {
+                img { height: 206px; }
+            }
+        }
         &.tiles-big .panel-body ul li { width: 50%; }
         &.has-summary {
             .panel-body ul li {
