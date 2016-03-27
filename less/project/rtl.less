@@ -54,7 +54,7 @@
         }
         &.social {
             ul li {
-                margin-left: 8px;
+                margin-left: 1px;
                 &:last-child { margin-left: 0; }
                 a { line-height: 40px; }
             }
@@ -90,11 +90,18 @@
             .panel-body ul li {
                 .dsc {
                     h3 { font-size: 18px; font-weight: bold; }
-                    p { max-height: 58px; }
+                    p { max-height: 58px; display: none; }
                 }
                 .time {
                     right: auto; left: -48px;
                     &:before { margin-left: 3px; }
+                }
+            }
+            &.first-featured {
+                .panel-body ul li {
+                    &:first-child {
+                        .dsc p { display: block; }
+                    }
                 }
             }
             &.items-horizontal {

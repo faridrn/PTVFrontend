@@ -1,6 +1,9 @@
 // MD
 @media (max-width: @screen-md-max) { 
     .panel {
+        &.list .panel-body ul li {
+            &:nth-child(15), &:nth-child(16) { display: none; }
+        }
         &._graylighter {
             &.list .panel-body ul li {
                 a {
