@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <title>{Index}</title>
+                <meta name="description" content="{Description}">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="css/style.css">
+                <script src="js/modernizr-2.6.2.min.js"></script>
+        </head>
+        <body class="election">
+                <div id="breaking" style="display: none;">
+                        <div class="inner">
+                                <div class="container">
+                                        <div class="row">
+                                                <div class="col-xs-12">
+                                                        <div class="panel ticker ticker-breaking title-overlay">
+                                                                <div class="panel-title">
+                                                                        <h2>Breaking News</h2>
+                                                                </div>
+                                                                <div class="panel-body">
+                                                                        <ul>
+                                                                        </ul>
+                                                                        <button type="button" class="close">&times;</button>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>    <header id="header">
+                        <div id="masthead" class="wrapper _bluedark">
+                                <div class="container">
+                                        <div class="row">
+                                                <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1">
+                                                        <h1 class="logo">
+                                                                <a href="/">PressTV</a>
+                                                        </h1>
+                                                </div>
+                                                <div class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+                                                        <ul class="menu header-menu">
+                                                                <li><a href="/Default/Schedule"><i class="icon-calendar"></i>Schedule</a></li>
+                                                                <li><a href="/Default/Live"><i class="icon-video"></i>Watch Live</a></li>
+                                                                <li class="search haschild">
+                                                                        <a href="#"><i class="icon-search"></i></a>
+                                                                        <div class="child">
+                                                                                <form role="form" class="search-form" action="/Default/Search" method="get">
+                                                                                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+                                                                                        <button type="submit">&nbsp;</button>
+                                                                                </form>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="hidden-sm hidden-md hidden-lg"><a href="#" class="menu-toggle" data-toggle="slide" data-target="#menu"><i class="icon-bars"></i></a></li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="navbar" class="wrapper _bluedarker">
+                                <div class="container">
+                                        <div class="row">
+                                                <nav id="menu" class="col-xs-12 col-md-10">
+                                                        <ul class="menu menu-inline">
+                                                                <li class="haschild">
+                                                                        <a href="#">News</a>
+                                                                        <div class="child">
+                                                                                <ul>
+                                                                                        <li><a href="/Default/Section/102">Middle East</a></li>
+                                                                                        <li><a href="/Default/Section/104">Asia-Pacific</a></li>
+                                                                                        <li><a href="/Default/Section/105">Africa</a></li>
+                                                                                        <li><a href="/Default/Section/106">Europe</a></li>
+                                                                                        <li><a href="/Default/Section/107">Americas</a></li>
+                                                                                        <li><a href="/Default/Section/12001">Society</a></li>
+                                                                                        <li><a href="/Default/Section/12002">Arts</a></li>
+                                                                                        <li><a href="/Default/Section/12004">Business</a></li>
+                                                                                        <li><a href="/Default/Section/12005">Sports</a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="haschild">
+                                                                        <a href="/Default/Section/101">Iran</a>
+                                                                        <div class="child">
+                                                                                <ul>
+                                                                                        <li><a href="/Default/Section/10101">Politics</a></li>
+                                                                                        <li><a href="/Default/Section/10102">Economy</a></li>
+                                                                                        <li><a href="/Default/Section/10103">Energy</a></li>
+                                                                                        <li><a href="/Default/Section/10104">Nuclear Energy</a></li>
+                                                                                        <li><a href="/Default/Section/10105">Culture</a></li>
+                                                                                        <li><a href="/Default/Section/10106">Defence</a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </li>
+                                                                <li><a href="/Default/Section/103"><span>US</span></a></li>
+                                                                <li><a href="/Default/Section/108"><span>UK</span></a></li>
+                                                                <li><a href="/Default/Section/130"><span>Videos</span></a></li>
+                                                                <li class="haschild">
+                                                                        <a href="/Default/Section/150">Programs</a>
+                                                                        <div class="child">
+                                                                                <ul>
+                                                                                        <li><a href="/Default/Section/15045">A Simple Question</a></li>
+                                                                                        <li><a href="/Default/Section/15034">Africa Today</a></li>
+                                                                                        <li><a href="/Default/Section/15024">Comment</a></li>
+                                                                                        <li><a href="/Default/Section/15067">Economic Divide</a></li>
+                                                                                        <li><a href="/Default/Section/15071">Food for Thought</a></li>
+                                                                                        <li><a href="/Default/Section/15015">Iran</a></li>
+                                                                                        <li><a href="/Default/Section/15006">Iran Today</a></li>
+                                                                                        <li><a href="/Default/Section/15072">Islam and Life</a></li>
+                                                                                        <li><a href="/Default/Section/15070">On The News Line</a></li>
+                                                                                        <li><a href="/Default/Section/15080">Pictures that Shake the World</a></li>
+                                                                                        <li><a href="/Default/Section/15064">Press Plus</a></li>
+                                                                                        <li><a href="/Default/Section/15060">The Sun Will Rise</a></li>
+                                                                                        <li><a href="/Default/Section/15076">The Isle</a></li>
+                                                                                        <li><a href="/Default/Section/15078">True Image</a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </li>
+                                                                <li><a target="_blank" href="http://presstvdoc.com">Docs</a></li>
+                                                                <li class="hidden-md hidden-lg"><a href="/Farsi">فارسی</a></li>
+                                                                <li class="hidden-md hidden-lg"><a href="/French">French</a></li>
+                                                        </ul>
+                                                </nav>
+                                                <div id="sidemenu" class="hidden-xs hidden-sm col-md-2">
+                                                        <ul class="menu menu-inline">
+                                                                <li class="rtl">
+                                                                        <a href="/Farsi">فارسی</a>
+                                                                </li>
+                                                                <li class="rtl">
+                                                                        <a href="/French">French</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </header>
+
+
+                <section id="main">
+                        <div id="main-top" class="wrapper">
+                                <div class="container">
+                                        <div id="page" class="row">
+                                                <div class="col-xs-12 col-md-8">
+                                                        <div id="itemlist" class="itemlist">
+                                                                <header class="page-heading">
+                                                                        <img src="http://217.218.67.231/static/iranelection-750.jpg" />
+                                                                        <h2 class="page-header">Iran Election 2017</h2>
+                                                                        <ul class="subcategories">
+                                                                                <li>
+                                                                                        <a href="/Default/Section/11601">News</a></li>
+                                                                                <li>
+                                                                                        <a href="/Default/Section/11602">Facts and Figures</a></li>
+                                                                                <li>
+                                                                                        <a href="/Default/Section/11603">Videos</a></li>
+                                                                        </ul>
+                                                                        <div class="clearfix"></div>
+                                                                </header>
+                                                                <div class="panel items top-news first-featured inner-page">
+                                                                        <div class="panel-body">
+                                                                                <ul>
+                                                                                        <li class="">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517354/Turkey-Syria-Russia">Stop insisting on Assad leadership: Turkey to Russia</a>
+                                                                                                </h3>
+                                                                                                <div class="img"><a href="/Detail/2017/04/09/517354/Turkey-Syria-Russia"><img data-src="http://cdn.presstv.com/photo/20170409/0c786f93-d008-4a7b-b8dc-b562d5494f18.jpg" alt="Turkish FM" /><noscript><img src="http://cdn.presstv.com/photo/20170409/0c786f93-d008-4a7b-b8dc-b562d5494f18.jpg" alt="Turkish FM" /></noscript></a></div>
+                                                                                                <div class="dsc">
+                                                                                                        <p>
+                                                                                                                <a href="/Detail/2017/04/09/517354/Turkey-Syria-Russia">
+                                                                                                                        Turkish Foreign Minister Mevlut Cavusoglu claims Moscow has not taken necessary steps in the face of ceasefire breaches in Syria.
+                                                                                                                </a>
+                                                                                                        </p>
+                                                                                                        <ul class="related">
+                                                                                                                <li>
+                                                                                                                        <a href="/Detail/2017/04/09/517303/Assad-ouster-a-US-priority-Trumps-UN-envoy">Assad ouster a US priority: Trump’s UN envoy </a>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                        <a href="/Detail/2017/04/08/517178/Syria-Richard-Black">‘No motive for Assad to resort to gas attack’</a>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                        <a href="/Detail/2017/04/07/517096/Syria-condemn-US-missile-strike-Washington-reckless-behavior">Assad slams &#39;reckless, irresponsible&#39; US behavior</a>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                        <a href="/Detail/2017/04/06/517012/UK-Syria-Boris-Johnson-Trump">UK warns US not to rush into war against Syria </a>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                        <a href="/Detail/2017/04/06/517009/US-Syria-Trump-military-action">US mulls military action against Syria, Assad ouster</a>
+                                                                                                                </li>
+                                                                                                        </ul>
+                                                                                                </div>
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="panel items tiles">
+                                                                        <div class="panel-body">
+                                                                                <ul>
+                                                                                        <li class="">
+                                                                                                <div class="img"><a href="/Detail/2017/04/09/517323/Syria-Izmir-Turkey"><img data-src="http://cdn.presstv.com/photo/20170409/26112026-81f6-430a-b5ff-809a48020374.jpg" alt="Turks" /><noscript><img src="http://cdn.presstv.com/photo/20170409/26112026-81f6-430a-b5ff-809a48020374.jpg" alt="Turks" /></noscript></a></div>
+                                                                                                <div class="dsc">
+                                                                                                        <h3>
+                                                                                                                <a href="/Detail/2017/04/09/517323/Syria-Izmir-Turkey">Turks attack Syrians with knives, burn tents</a>
+                                                                                                        </h3>
+                                                                                                        <p>
+                                                                                                                <a href="/Detail/2017/04/09/517323/Syria-Izmir-Turkey">
+                                                                                                                        Turks, armed with knives and clubs, stormed into a makeshift housing and set fire to Syrian refugees’ tents in Izmir province.
+                                                                                                                </a>
+                                                                                                        </p>
+                                                                                                </div>
+                                                                                        </li>
+                                                                                        <li class="">
+                                                                                                <div class="img"><a href="/Detail/2017/04/07/517039/Turkey-Erdogan-Europe-Nazi"><img data-src="http://cdn.presstv.com/photo/20170407/fb8545a7-0746-4f55-8c0e-937f00e5c469.jpg" alt="Turkey-Europe" /><noscript><img src="http://cdn.presstv.com/photo/20170407/fb8545a7-0746-4f55-8c0e-937f00e5c469.jpg" alt="Turkey-Europe" /></noscript></a></div>
+                                                                                                <div class="dsc">
+                                                                                                        <h3>
+                                                                                                                <a href="/Detail/2017/04/07/517039/Turkey-Erdogan-Europe-Nazi">Erdogan: Europe ‘Nazism center, rotting continent’</a>
+                                                                                                        </h3>
+                                                                                                        <p>
+                                                                                                                <a href="/Detail/2017/04/07/517039/Turkey-Erdogan-Europe-Nazi">
+                                                                                                                        The Turkish president says ‘Europe is no longer a center of democracy’ after some EU states cancelled Turkish referendum campaign rallies there.
+
+                                                                                                                </a>
+                                                                                                        </p>
+                                                                                                </div>
+                                                                                        </li>
+                                                                                        <li class="">
+                                                                                                <div class="img"><a href="/Detail/2017/04/07/517022/Turkey-Erdogan-US-military-action-Syria-chemical-attack-Idlib-Khan-Shaykhun"><img data-src="http://cdn.presstv.com/photo/20170407/483ba6a0-a544-41f8-826c-a23da3826490.jpg" alt="Erdogan" /><noscript><img src="http://cdn.presstv.com/photo/20170407/483ba6a0-a544-41f8-826c-a23da3826490.jpg" alt="Erdogan" /></noscript></a></div>
+                                                                                                <div class="dsc">
+                                                                                                        <h3>
+                                                                                                                <a href="/Detail/2017/04/07/517022/Turkey-Erdogan-US-military-action-Syria-chemical-attack-Idlib-Khan-Shaykhun">Erdogan says would back US offensive in Syria</a>
+                                                                                                        </h3>
+                                                                                                        <p>
+                                                                                                                <a href="/Detail/2017/04/07/517022/Turkey-Erdogan-US-military-action-Syria-chemical-attack-Idlib-Khan-Shaykhun">
+                                                                                                                        Turkish President Recep Tayyip Erdogan says Ankara would welcome a US military action in Syria.
+                                                                                                                </a>
+                                                                                                        </p>
+                                                                                                </div>
+                                                                                        </li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-4">
+                                                        <div class="panel list titles sidebar-titles">
+                                                                <span class="loading" data-loading="/callback/Latest1">Loading ...</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="main-programs" class="wrapper _black">
+                                <div class="container">
+                                        <div class="row">
+                                                <div class="col-xs-12">
+                                                        <div class="panel items tiles tiles-6 has-summary">
+                                                                <div class="panel-title">
+                                                                        <h2><a href="/Default/Section/150">Programs</a></h2>
+                                                                </div>
+
+
+                                                                <div class="panel-body">
+                                                                        <ul>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15045">A Simple Question</a>
+                                                                                                <span class="time">7hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/09/517339/Westminster-terror-attack-"><img src="http://cdn.presstv.com/photo/20170409/bac1516e-0260-49df-acf7-6788ee4ff0bd.jpg" alt="ASQ"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517339/Westminster-terror-attack-">Why did the Westminster terror attack happen?</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/09/517339/Westminster-terror-attack-">
+                                                                                                                The British-born man who killed four people and injured more than 50 others in an attack outside the British Parliament in London last week was known as a potential extremist to UK intelligence agencies in 2010, a report says.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15076">The Isle</a>
+                                                                                                <span class="time">7hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/09/517337/Brexit-"><img src="http://cdn.presstv.com/photo/20170409/3791455d-b9e9-468c-bcbb-41967735979e.jpg" alt="ISLE"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517337/Brexit-">Brexit: A complex divorce process</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/09/517337/Brexit-">
+                                                                                                                It’s becoming clear that there is far more complexity than thought behind Britain’s exit from the European Union, the so-called Brexit.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15070">On The News Line</a>
+                                                                                                <span class="time">7hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/09/517334/Trump-administration-Russia-Jan-Schakowsky"><img src="http://cdn.presstv.com/photo/20170409/f1e744d2-39e3-4df2-8a60-863c8a12b346.jpg" alt="ONL"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517334/Trump-administration-Russia-Jan-Schakowsky">Backdoor contacts in Trump administration</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/09/517334/Trump-administration-Russia-Jan-Schakowsky">
+                                                                                                                Further headaches for US President Donald Trump and his team; the scandal surrounding alleged links between Trump’s administration and Russia has taken on new dimensions.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15057">The Debate</a>
+                                                                                                <span class="time">17hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/08/517286/US-missile-strike-aggression-Syria-Russia-warship"><img src="http://cdn.presstv.com/photo/20170408/c5ccd831-ca46-44c9-9d27-757f93d0c6f5.jpg" alt="Russia -US"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/08/517286/US-missile-strike-aggression-Syria-Russia-warship">Debate: US aggression on Syria</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/08/517286/US-missile-strike-aggression-Syria-Russia-warship">
+                                                                                                                This edition of The Debate discusses the latest developments in Syria after the US missile strike.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15060">The Sun Will Rise</a>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/08/517203/Israel-parliament-Boycott-Divestment-and-Sanctions-movement-BDS-"><img src="http://cdn.presstv.com/photo/20170408/631d46c7-7db9-4230-8982-294c489f28fd.jpg" alt="SWR"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/08/517203/Israel-parliament-Boycott-Divestment-and-Sanctions-movement-BDS-">Why is Israel so scared of BDS?</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/08/517203/Israel-parliament-Boycott-Divestment-and-Sanctions-movement-BDS-">
+                                                                                                                Israel’s parliament has approved a new law banning anyone found to support the Boycott, Divestment and Sanctions (BDS) movement from entering the country.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15057">The Debate</a>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/07/517141/US-strike-Syria-Shayrat-airfield"><img src="http://cdn.presstv.com/photo/20170407/70edc817-53b8-4086-9ae7-381e62051c71.jpg" alt="United States "></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/07/517141/US-strike-Syria-Shayrat-airfield">Debate: US missile strike on Syria</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/07/517141/US-strike-Syria-Shayrat-airfield">
+                                                                                                                This episode of The Debate discusses a recent US missile strike against a Syrian airbase.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="main-bot" class="wrapper">
+                                <div class="container">
+                                        <div class="row">
+                                                <div class="col-xs-12">
+                                                        <div class="panel items tiles tiles-6 has-summary no-img">
+                                                                <div class="panel-title">
+                                                                        <h2><a href="/Default/Section/150">Programs</a></h2>
+                                                                </div>
+
+
+                                                                <div class="panel-body">
+                                                                        <ul>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15045">A Simple Question</a>
+                                                                                                <span class="time">7hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/09/517339/Westminster-terror-attack-"><img src="http://cdn.presstv.com/photo/20170409/bac1516e-0260-49df-acf7-6788ee4ff0bd.jpg" alt="ASQ"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517339/Westminster-terror-attack-">Why did the Westminster terror attack happen?</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/09/517339/Westminster-terror-attack-">
+                                                                                                                The British-born man who killed four people and injured more than 50 others in an attack outside the British Parliament in London last week was known as a potential extremist to UK intelligence agencies in 2010, a report says.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15076">The Isle</a>
+                                                                                                <span class="time">7hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/09/517337/Brexit-"><img src="http://cdn.presstv.com/photo/20170409/3791455d-b9e9-468c-bcbb-41967735979e.jpg" alt="ISLE"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517337/Brexit-">Brexit: A complex divorce process</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/09/517337/Brexit-">
+                                                                                                                It’s becoming clear that there is far more complexity than thought behind Britain’s exit from the European Union, the so-called Brexit.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15070">On The News Line</a>
+                                                                                                <span class="time">7hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/09/517334/Trump-administration-Russia-Jan-Schakowsky"><img src="http://cdn.presstv.com/photo/20170409/f1e744d2-39e3-4df2-8a60-863c8a12b346.jpg" alt="ONL"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/09/517334/Trump-administration-Russia-Jan-Schakowsky">Backdoor contacts in Trump administration</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/09/517334/Trump-administration-Russia-Jan-Schakowsky">
+                                                                                                                Further headaches for US President Donald Trump and his team; the scandal surrounding alleged links between Trump’s administration and Russia has taken on new dimensions.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15057">The Debate</a>
+                                                                                                <span class="time">17hr</span>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/08/517286/US-missile-strike-aggression-Syria-Russia-warship"><img src="http://cdn.presstv.com/photo/20170408/c5ccd831-ca46-44c9-9d27-757f93d0c6f5.jpg" alt="Russia -US"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/08/517286/US-missile-strike-aggression-Syria-Russia-warship">Debate: US aggression on Syria</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/08/517286/US-missile-strike-aggression-Syria-Russia-warship">
+                                                                                                                This edition of The Debate discusses the latest developments in Syria after the US missile strike.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15060">The Sun Will Rise</a>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/08/517203/Israel-parliament-Boycott-Divestment-and-Sanctions-movement-BDS-"><img src="http://cdn.presstv.com/photo/20170408/631d46c7-7db9-4230-8982-294c489f28fd.jpg" alt="SWR"></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/08/517203/Israel-parliament-Boycott-Divestment-and-Sanctions-movement-BDS-">Why is Israel so scared of BDS?</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/08/517203/Israel-parliament-Boycott-Divestment-and-Sanctions-movement-BDS-">
+                                                                                                                Israel’s parliament has approved a new law banning anyone found to support the Boycott, Divestment and Sanctions (BDS) movement from entering the country.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                                <li class="video">
+                                                                                        <div class="section">
+                                                                                                <a href="/Default/Section/15057">The Debate</a>
+                                                                                        </div>
+                                                                                        <div class="img play"><a href="/Detail/2017/04/07/517141/US-strike-Syria-Shayrat-airfield"><img src="http://cdn.presstv.com/photo/20170407/70edc817-53b8-4086-9ae7-381e62051c71.jpg" alt="United States "></a></div>
+                                                                                        <div class="dsc">
+                                                                                                <h3>
+                                                                                                        <a href="/Detail/2017/04/07/517141/US-strike-Syria-Shayrat-airfield">Debate: US missile strike on Syria</a>
+                                                                                                </h3>
+                                                                                                <p>
+                                                                                                        <a href="/Detail/2017/04/07/517141/US-strike-Syria-Shayrat-airfield">
+                                                                                                                This episode of The Debate discusses a recent US missile strike against a Syrian airbase.
+                                                                                                        </a>
+                                                                                                </p>
+                                                                                        </div>
+                                                                                </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <footer id="footer">
+                        <div class="wrapper _gray">
+                                <div class="container">
+                                        <div id="sitemap" class="row">
+                                                <div class="col-xs-4 col-sm-2 col-md-2 hidden-xs">
+                                                        &nbsp;
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="footer-menu">
+                                                                <h4 class="menu-title">
+                                                                        <a href="#">News</a>
+                                                                </h4>
+                                                                <div class="row">
+                                                                        <div class="col-xs-6">
+                                                                                <ol>
+                                                                                        <li><a href="/Default/Section/101">Iran</a></li>
+                                                                                        <li><a href="/Default/Section/102">Middle East</a></li>
+                                                                                        <li><a href="/Default/Section/103"><span>US</span></a></li>
+                                                                                        <li><a href="/Default/Section/108"><span>UK</span></a></li>
+                                                                                        <li><a href="/Default/Section/104">Asia-Pacific</a></li>
+                                                                                        <li><a href="/Default/Section/105">Africa</a></li>
+                                                                                </ol>
+                                                                        </div>
+                                                                        <div class="col-xs-6">
+                                                                                <ol>
+                                                                                        <li><a href="/Default/Section/106">Europe</a></li>
+                                                                                        <li><a href="/Default/Section/107">Americas</a></li>
+                                                                                        <li><a href="/Default/Section/12001">Society</a></li>
+                                                                                        <li><a href="/Default/Section/12002">Arts</a></li>
+                                                                                        <li><a href="/Default/Section/12004">Business</a></li>
+                                                                                        <li><a href="/Default/Section/12005">Sports</a></li>
+                                                                                </ol>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-2 col-md-2">
+                                                        <div class="footer-menu">
+                                                                <h4 class="menu-title">
+                                                                        <a href="/Default/Section/130">Video</a>
+                                                                </h4>
+                                                                <ol>
+                                                                        <li><a href="/Default/Section/13012">News Bulletin</a></li>
+                                                                        <li><a href="/Default/Section/13001">Reports</a></li>
+                                                                        <li><a href="/Default/Section/13002">Interviews</a></li>
+                                                                </ol>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-2 col-md-2">
+                                                        <div class="footer-menu">
+                                                                <h4 class="menu-title">
+                                                                        <a href="#">TV</a>
+                                                                </h4>
+                                                                <ol>
+                                                                        <li><a href="/Default/Live">Watch Live</a></li>
+                                                                        <li><a href="/Default/Schedule">Schedule</a></li>
+                                                                        <li><a href="#">Shows</a></li>
+                                                                        <li><a href="http://presstvdoc.com">Documentaries</a></li>
+                                                                </ol>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-2 col-md-2">
+                                                        <div class="footer-menu">
+                                                                <h4 class="menu-title">
+                                                                        <a href="#">PressTV</a>
+                                                                </h4>
+                                                                <ol>
+                                                                        <li><a href="/Detail/2014/12/31/390988/About-PressTV">About PressTV</a></li>
+                                                                        <li><a href="/Default/Frequencies">Frequencies</a></li>
+                                                                        <li><a href="/Detail/2014/12/31/390990/Privacy-Policy">Privacy Policy</a></li>
+                                                                        <li><a href="/Detail/2014/12/31/390989/Contact-Press-TV">Contact Info</a></li>
+                                                                        <li><a href="/Default/SMS">SMS</a></li>
+                                                                </ol>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="row hidden-xs">
+                                                <div class="col-xs-12">
+                                                        <form class="form-inline newsletter" action="#" method="get" id="newsletter-form">
+                                                                <div class="form-group">
+                                                                        <input id="inpEmail" type="email" placeholder="Subscribe to Newsletter" name="email" class="form-control" />
+                                                                        <button type="submit" class="btn btn-default">Subscribe</button>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                        </form>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div id="copyright" class="wrapper _black">
+                                <div class="container">
+                                        <div class="row">
+                                                <div class="col-sm-2 logo-container text-right">
+                                                        <a href="#" class="footer-logo">PressTV</a>
+                                                </div>
+                                                <div class="col-sm-10 text-right">
+                                                        &copy; Copyright 2016 PressTV. All rights reserved.
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="to-top">
+                                <i class="icon-up-open-big"></i> Top
+                        </div>    </footer>
+
+                <script src="js/jquery-1.11.3.min.js"></script>
+                <script src="js/main.js"></script>
+        </body>
+</html>

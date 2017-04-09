@@ -48,3 +48,14 @@ body, .wrapper, .panel {
         &.active a { background: lighten(@blue-light, 0%); color: #fff; }
     }
 }
+.election {
+    .panel {
+        &.items.top-news {
+            margin-top: 0; margin-bottom: 0;
+            ul li:first-child .dsc p {
+                display: block;
+                a { padding-top: 5px; }
+            }
+        }
+    }
+}
