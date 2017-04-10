@@ -70,13 +70,13 @@ $(function () {
         e.preventDefault();
     });
 
-    if ($(".item-text .item-gallery").length) {
+    if ($(".item-gallery").length) {
         $(".item-gallery ul").owlCarousel({
             items: 1
             , nav: true
             , loop: true
             , navText: ["", ""]
-            , navContainer: $(".item-text .item-gallery")
+            , navContainer: $(".item-gallery")
             , autoHeight: true
             , rtl: $("body").hasClass('rtl') ? true : false
                     // Classes

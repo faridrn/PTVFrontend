@@ -320,11 +320,15 @@
         &.tiles-6 {
             .panel-body {
                 ul li {
-                    width: 16.66666666%; min-height: 222px;
+                    width: 16.66666666%; min-height: 190px; margin-bottom: 0;
                     .img {
                         img { height: 102px; }
                     }
                     .dsc {
+                        height: auto;
+                        h3 {
+                            font-size: @font-size-base + 2; max-height: none;
+                        }
                         p { display: none; }
                     }
                 }

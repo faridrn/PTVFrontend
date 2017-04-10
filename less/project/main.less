@@ -57,5 +57,21 @@ body, .wrapper, .panel {
                 a { padding-top: 5px; }
             }
         }
+        &.tiles { 
+            .panel-body ul li {
+                .dsc {
+                    height: auto;
+                    p { margin-top: 10px; color: @gray-dark; }
+                }
+            }
+        }
+    }
+    .item-gallery {
+        li { height: 700px; }
+        figure {
+            img { display: block; width: 100%; height: auto; }
+            figcaption { font-size: 12px; padding: (@grid-gutter-width / 2); color: #666; background: lighten(@gray-lighter, 2%); }
+            & > div { height: 423px; }
+        }
     }
 }
