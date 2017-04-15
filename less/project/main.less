@@ -48,6 +48,8 @@ body, .wrapper, .panel {
         &.active a { background: lighten(@blue-light, 0%); color: #fff; }
     }
 }
+
+// Election page
 .election {
     .panel {
         &.items.top-news {
@@ -72,6 +74,44 @@ body, .wrapper, .panel {
             img { display: block; width: 100%; height: auto; }
             figcaption { font-size: 12px; padding: (@grid-gutter-width / 2); color: #666; background: lighten(@gray-lighter, 2%); }
             & > div { height: 423px; }
+        }
+    }
+
+    &.candidates {
+        .page-header {
+            font-style: italic; font-size: 48px; text-align: center; margin: @grid-gutter-width 0;
+            strong { font-weight: bold; font-style: normal; font-size: 60px; display: block; }
+        }
+    }
+}
+// Election
+body {
+    /*transition: all 0.2s;*/
+    > #sidebar-details {
+        opacity: 0; visibility: hidden; transition: 0.2s all; height: 0; 
+        overflow: hidden; position: fixed; left: 0; bottom: 0; background: @gray-lighter; width: 100%; overflow: hidden; overflow-y: scroll; z-index: 999;
+        border-top: 3px solid @blue;
+        .contents {
+            padding: @grid-gutter-width; position: relative; z-index: 1000; width: @container-lg; margin: 0 auto;
+            color: #000; border-right: 400px solid transparent;
+            figure {
+                width: 400px; height: 400px; position: relative; overflow: hidden; border-radius: 100%; margin: 40px 0 40px 40px; border: 2px solid @blue; float: right; margin-right: -400px;
+                img { display: block; width: auto; height: 100%; position: absolute; top: 0; left: 50%; margin-left: -250px; }
+            }
+            strong { font-weight: bold; }
+            hr { border-top-color: @gray; }
+        }
+    }
+}
+body.sidebar-open {
+    margin-bottom: 600px; position: relative; overflow-y: hidden;
+    > #sidebar-details {
+        opacity: 1; visibility: visible; height: 600px; 
+        .close-sidebar {
+            background: transparent; width: 40px; height: 40px; border: 1px solid @text-color; color: @text-color; border-radius: 100%; z-index: 700;
+            position: fixed; top: @grid-gutter-width; right: @grid-gutter-width; text-align: center; line-height: 30px; font-size: 32px; transition: 0.2s all;
+            &:hover { background: rgba(0, 0, 0, 0.1); }
+            &:before { display: block; content: ''; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); bottom: 600px; left: 0; z-index: 0; transition: 0 none;  }
         }
     }
 }

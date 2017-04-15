@@ -425,3 +425,20 @@ $.fn.serializeObject = function () {
     });
     return o;
 };
+
+
+
+// Election
+$(function () {
+    $(document).on('click', ".close-sidebar", function (e) {
+        e.preventDefault();
+        $($(this).attr('data-target')).removeClass($(this).attr('data-class'));
+        return false;
+    });
+    $(document).on('click', ".panel.candidates li", function(e) {
+        var $data = $(this).find("pre").html();
+        $("#sidebar-details .contents").html($data).promise().done(function () {
+            $("body").addClass("sidebar-open");
+        });
+    });
+}); 
