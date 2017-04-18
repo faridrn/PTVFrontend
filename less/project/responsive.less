@@ -207,6 +207,9 @@
     }
     .election {
         .item-gallery li { height: 470px; }
+        .panel.tiles.tiles-6 .panel-body ul li {
+            width: 33.3333333%;
+        }
     }
 }				     
 // XS
@@ -396,5 +399,21 @@
     #editors-choice { border-bottom: 1px solid @gray-light; margin-bottom: @grid-gutter-width; }
     .election {
         .item-gallery li { height: auto; }
+        .panel {
+            &.top-news + .panel.tiles ul li {
+                &:last-child { display: none; }
+            }
+            &.tiles.tiles-6 .panel-body ul li {
+                width: 50%;
+            }
+            &.timeline {
+                ul {
+                    margin-left: 140px;
+                    li {
+                        .section .time { width: 80px; margin-left: -180px; }
+                    }
+                }
+            }
+        }
     }
 }

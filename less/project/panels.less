@@ -236,6 +236,7 @@
 
                     }
                     &:first-child {
+                        &:before { display: none; }
                         .img {
                             img { height: 424px; }
                         }
@@ -269,11 +270,11 @@
                 &.related {
                     margin-top: @grid-gutter-width;
                     li {
-                        width: 100%; float: none; margin-bottom: 2px; position:relative; z-index: 100; padding-left: 24px;
+                        width: 100%; float: none; margin-bottom: 4px; position:relative; z-index: 100; padding-left: 20px !important; height: auto !important; margin-top: 6px; min-height: 0 !important;
                         > a {
                             &:hover { color: @blue; }
                         }
-                        &:before { display: block; content: ''; width: 6px; height: 6px; background: @text-color; position: absolute; top: 50%; left: 8px; margin-top: -3px; border-radius: 100%; }
+                        &:before { display: block; content: ''; width: 6px; height: 6px; background: @text-color; position: absolute; top: 10px; left: 8px; margin-top: -3px; border-radius: 100%; }
                     }
                 }
             }

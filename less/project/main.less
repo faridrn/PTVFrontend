@@ -83,6 +83,13 @@ body, .wrapper, .panel {
             strong { font-weight: bold; font-style: normal; font-size: 60px; display: block; }
         }
     }
+    .page-heading {
+        img { display: block; width: 100%; height: auto; }
+        .page-header {
+            &:empty { display: none; }
+            & +.subcategories { margin-top: 0; }
+        }
+    }
 }
 // Election
 body {
