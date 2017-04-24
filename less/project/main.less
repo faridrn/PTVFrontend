@@ -99,7 +99,7 @@ body {
         overflow: hidden; position: fixed; left: 0; bottom: 0; background: @gray-lighter; width: 100%; overflow: hidden; overflow-y: scroll; z-index: 999;
         border-top: 3px solid @blue;
         .contents {
-            padding: @grid-gutter-width; position: relative; z-index: 1000; width: @container-lg; margin: 0 auto;
+            padding: @grid-gutter-width; position: relative; z-index: 10000; width: @container-lg; margin: 0 auto;
             color: #000; border-right: 400px solid transparent;
             figure {
                 width: 400px; height: 400px; position: relative; overflow: hidden; border-radius: 100%; margin: 40px 0 40px 40px; border: 2px solid @blue; float: right; margin-right: -400px;
@@ -109,7 +109,11 @@ body {
             hr { border-top-color: @gray; }
         }
     }
-    .close-sidebar { visibility: hidden; opacity: 0; transition: 0.2s all; }
+    .close-sidebar {
+        visibility: hidden; opacity: 0; transition: 0.2s all; width: 100%; position: absolute;
+        @-moz-document url-prefix() { margin-top: -@headerHeight; }
+        span { display: block; width: 100%; height: 100%; }
+    }
 }
 body.sidebar-open {
     margin-bottom: 600px; position: relative; overflow-y: hidden;
@@ -117,15 +121,17 @@ body.sidebar-open {
         opacity: 1; visibility: visible; height: 600px;
     }
     .close-sidebar {
-        background: transparent; border: 0 none; z-index: 700; position: relative; opacity: 1; visibility: visible; 
-        /*background: transparent; width: 40px; height: 40px; border: 1px solid @text-color; color: @text-color; border-radius: 100%; z-index: 700;*/
-        /*position: fixed; top: @grid-gutter-width; right: @grid-gutter-width; text-align: center; line-height: 30px; font-size: 32px; transition: 0.2s all;*/
-        &:hover { background: rgba(0, 0, 0, 0.1); }
-        &:before { display: block; content: ''; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; z-index: 0; transition: 0 none; }
-        &:after {
-            display: block; content: '×'; position: fixed; background: transparent; width: 40px; height: 40px; border: 1px solid #fff;
-            color: #fff; border-radius: 100%; z-index: 100; top: @grid-gutter-width; right: @grid-gutter-width; text-align: center;
-            line-height: 38px; font-size: 32px; transition: 0.2s all;
+        background: transparent; border: 0 none; z-index: 700; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible; min-height: 100vh;
+        span {
+            /*background: transparent; width: 40px; height: 40px; border: 1px solid @text-color; color: @text-color; border-radius: 100%; z-index: 700;*/
+            /*position: fixed; top: @grid-gutter-width; right: @grid-gutter-width; text-align: center; line-height: 30px; font-size: 32px; transition: 0.2s all;*/
+            &:hover { background: rgba(0, 0, 0, 0.1); }
+            &:before { display: block; content: ''; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; z-index: 0; transition: none; }
+            &:after {
+                display: block; content: '×'; position: fixed; background: transparent; width: 40px; height: 40px; border: 1px solid #fff;
+                color: #fff; border-radius: 100%; z-index: 100; top: @grid-gutter-width; right: @grid-gutter-width; text-align: center;
+                line-height: 38px; font-size: 32px; transition: 0.2s all;
+            }
         }
     }
 }
