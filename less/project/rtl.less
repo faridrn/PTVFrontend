@@ -221,11 +221,14 @@
     }
     
     // Election
-    .panel.candidates ul li { float: right; }
+    .panel.candidates ul li {
+        float: right;
+        figure { z-index: 1; }
+    }
     > #sidebar-details {
         font-family: 'BMitra Bold', 'B Mitra', 'Mitra', 'BMitra', 'Tahoma';
         .contents {
-            direction: rtl; text-align: right;
+            direction: rtl; text-align: right; border-right: 0 none; border-left: 400px solid transparent;
             figure { float: left; margin-left: 0; margin-right: 40px; }
         }
     }
