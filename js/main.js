@@ -179,7 +179,7 @@ $(function () {
                 if ($target.is(':visible'))
                     $target.fadeOut();
                 else
-                    $target.FadeIn();
+                    $target.fadeIn();
                 break;
         }
         e.preventDefault();
