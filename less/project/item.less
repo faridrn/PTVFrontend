@@ -60,11 +60,15 @@
     .item-tools {
         list-style: none; padding: 0; width: 20%; float: right;
         li {
+            height: 22px;
+            .btn {
+                float: right; border-radius: 0; background: rgb(221, 221, 221); color: @text-color;
+            }
             &.embed {
                 & > div { position: relative; }
-                .btn { float: right; border-radius: 0; }
                 textarea { display: none; border-radius: 0; position: absolute; top: 22px; right: 0; width: 240px; height: 120px; font-size: 12px; }
             }
+            & ~ li { margin-top: @grid-gutter-width / 2; clear: right; }
         }
     }
 }

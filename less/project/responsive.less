@@ -210,6 +210,15 @@
         .item-body {
             figure > div  { height: 405px; }
             .item-text { width: 85%; }
+            blockquote.fact-corner { margin: 0; }
+        }
+        .item-tools {
+            float: none; width: 100%; height: 22px;
+            li {
+                display: inline-block; float: right; clear: none;
+                .btn { float: none; }
+                & ~ li { clear: none; margin-top: 0; margin-right: @grid-gutter-width / 2; }
+            }
         }
     }
     .election {
